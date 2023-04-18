@@ -1,0 +1,310 @@
+@import url('https://fonts.cdnfonts.com/css/abnes');
+
+/* @font-face{
+    font-family:'logoFont';
+    src: url('abnes.otf') format('opentype')
+    ,url('abnes.ttf')format('truetype');
+    font-weight: normal;
+    font-style:normal;
+    /* opentype otf
+    truetype ttf
+    truetupe-aat
+    embedded-opentype
+    svg*
+*/
+.searchSection{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 12%;
+    
+}
+#searchBarId{
+    outline-color: blue;
+    height: 3.5em;
+    width: 25em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 2%;
+    z-index: 1;
+}
+#btnPesquisa{
+    height: 3.95em;
+    width: 15em;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -1em;
+    z-index: 2;
+}
+.parceiro1{
+    width: 12em;
+    height: 6em;
+}
+.parceiro2{
+    width: 18em;
+    height: 18em;
+    margin-top: -6.1em;
+}
+#titleEmpresas{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    color: black;
+    font-family: 'logoFont','Times','serif';
+}
+.titleSection{
+    text-align: center;
+   
+}
+#title1{
+    margin-right: 25%;
+    margin-top: 1em;
+    font-family: 'logoFont','Times','serif';
+    font-family: 'abnes', sans-serif;
+    font-size: 27pt;
+    text-shadow: 1px 10px 6.5px gray;
+    
+    
+    
+}
+.quemSomos{
+  position: absolute;
+  margin-left:7.5%;
+}
+#title2{
+   text-align: center;
+   margin-top: 7em;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+  
+}
+.header,a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    Font-weight:300;
+    color: black;
+    justify-content: space-between;
+    height: 3em;
+    margin-top: 20px;
+    gap: 3em;
+}
+
+
+#frufru{
+    background-attachment: fixed;
+    background-color: aqua;
+    height: 20em;
+    width: 3px;
+    margin-left: 10%;
+    margin-top: 10%;
+    background: rgb(21,9,127);
+    background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
+}
+
+#frufru2{
+    background-attachment: fixed;
+    background-color: aqua;
+    height: 0px;
+    width: 3px;
+    margin-left: -200%;
+    margin-top: -155%;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    background: rgb(21,9,127);
+    background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
+}
+@keyframes pfv{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 50em;
+    }
+}
+.nav_header a{
+    margin-right: 3em;
+    position: relative;
+    
+}
+.contentBodyMain{
+    margin-top: -27.5em;
+}
+.nav_header a::after{
+    content:" ";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.nav_header a:hover::after{
+    width: 100%;
+}
+    
+    
+
+
+.imgLogo{
+    height:2em;
+    width: 5em;
+    margin-top: -0.5em;
+}
+.logoBody{
+    height:5em;
+    width: 20em;
+    margin-left: 5em;
+    margin-top: 5%;
+   
+
+}
+.logoHeader{
+    margin-left: 3em;
+}
+#linha1{
+    margin-top: -0.5em;
+    box-shadow: 1px 1px 4px black;
+}
+
+
+.linhaColorida{
+    background-color: blue;
+    width: 7px;
+    height: 10em;
+    margin-left: 15%;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+.btn_menu_header{
+     display:none; 
+    background-color: transparent;
+    border:none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .btn_menu_header{
+        display: block;
+    }
+    .nav_header{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        height: 100%;
+        gap: 5px;
+        width: 35vw;
+     
+        text-align: center;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        background-color: gray;
+        border-radius: 10px;
+        /* PROBLEMAAAAAAAAAAAAAAAAAAAAA */
+    }
+    .nav_header a{
+        margin: auto;
+    }
+    .logoHeader{
+        margin-right: 42%;
+    }
+}
+@keyframes showSidebar {
+        from{
+            margin-left: -100vw;
+        }
+        to{
+            margin-left: -5vw;
+        }
+}
+.linha2{
+    box-shadow: 1px 1px 4px;
+}
+
+#icon-people{
+    height: 6em;
+    width: 6em;
+    margin-top: 320px;
+    margin-left: -45px;
+   
+
+}
+.descSobreNos{
+    text-align: left;
+    margin-left: 12%;
+    margin-top: 5%;
+    font-size: 20pt;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parceiros{
+    margin-left: 20%;
+    margin-top: 43%;
+}
+#sectionTextRight{
+    margin-left: 70%;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#sectionTextLeft{
+    margin-left: 20%;
+    margin-top: 20%;
+    
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleServicos{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parceirosImg{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.barEffect{
+    margin-left: 8%;
+    margin-top: -45.7%;
+    position: absolute;
+}
+
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.init-hidden-off{
+    opacity: 1;
+}
+
+#servicosText{
+    margin-top: 40%;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerColum{
+    display: flex;
+    flex-direction: column;
+}
