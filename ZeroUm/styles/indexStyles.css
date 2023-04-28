@@ -22,6 +22,9 @@
     margin-left: 12%;
     
 }
+#projetoSection{
+    margin-bottom: 20em;
+}
 #searchBarId{
     outline-color: blue;
     height: 3.5em;
@@ -109,26 +112,16 @@ body{
 #frufru{
     background-attachment: fixed;
     background-color: aqua;
+    z-index: 2;
     height: 20em;
-    width: 3px;
+    width: 5px;
     margin-left: 10%;
     margin-top: 10%;
-    background: rgb(21,9,127);
-    background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 6%, rgba(102,4,214,1) 33%, rgba(145,4,214,1) 60%);
 }
 
-#frufru2{
-    background-attachment: fixed;
-    background-color: aqua;
-    height: 0px;
-    width: 3px;
-    margin-left: -200%;
-    margin-top: -155%;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    background: rgb(21,9,127);
-    background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
-}
+
 @keyframes pfv{
     from{
         height: 0px;
@@ -178,6 +171,7 @@ body{
     width: 25em;
     transform: translateY(0px);
     animation: imgbody 5s ease-in-out infinite ;
+    
 }
 @keyframes imgbody {
     0%{
@@ -216,32 +210,7 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width:768px){
-    .btn_menu_header{
-        display: block;
-    }
-    .nav_header{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 0;
-        height: 100%;
-        gap: 5px;
-        width: 35vw;
-        text-align: center;
-        animation-duration: 1s;
-        margin-left: -100vw;
-        background-color: gray;
-        border-radius: 10px;
-        /* PROBLEMAAAAAAAAAAAAAAAAAAAAA */
-    }
-    .nav_header a{
-        margin: auto;
-    }
-    .logoHeader{
-        margin-right: 42%;
-    }
-}
+
 @keyframes showSidebar {
         from{
             margin-left: -100vw;
@@ -253,15 +222,35 @@ body{
 .linha2{
     box-shadow: 1px 1px 4px;
 }
-
+/* ICONS************************************************************************************************ */
 #icon-people{
     height: 6em;
     width: 6em;
     margin-top: 320px;
     margin-left: -45px;
-   
-
 }
+#icon-mala{
+    height: 6em;
+    width: 5.5em;
+    margin-left: -43px;
+    animation-name:animIcon;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s linear;
+    transition-delay: 0.5s;
+}
+/* animation keygframe */
+
+@keyframes animIcon{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* FIM ICONS************************************************************************************************ */
+
 .descSobreNos{
     text-align: left;
     margin-left: 12%;
@@ -633,35 +622,67 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.effectBinario{
+    margin-left: 70%;
+    margin-top: -8em;
+    height: 20em;
+    width: 30em;
+    position: absolute;
 
+}
 
 
 html { 
     scroll-behavior: smooth;
-
+    user-select: none;
 } 
 
-
+/* PROGRESOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 .progresso{
     width: 3px;
     height: 100%;
-    background-color: rgb(240,240,240);
-    
+   
 }
-#scroll-progresso{
+.progresso1{
     width: 3px;
+    height: 100%;
+    
+    margin-top: 6em;
+}
+
+#scroll-progresso{
+    width: 5px;
     height: 0%;
-    background-color:dodgerblue;
+    background: rgb(145,4,214);
+background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%, rgba(0,172,255,1) 85%);
     animation-name:line1;
     animation: ease-in-out;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    /* animation-play-state: paused; */
+   
+}
+#scroll-progresso1{
+    width: 5px;
+    height: 0%;
+    background: rgb(0,172,255);
+    background: rgb(0,172,255);
+    background: linear-gradient(180deg, rgba(0,172,255,1) 29%, rgba(76,203,50,1) 55%, rgba(255,0,14,1) 81%);
+    animation-name:line1;
+    animation: ease-in-out;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     /* animation-play-state: paused; */
    
 }
 
 
-@keyframes line1 {
+
+
+
+
+
+@keyframes line1{
     from{
         height: 0%;
     }
@@ -741,4 +762,9 @@ section{
     width: 50%;
     border-radius: 5px;
     height: 10em;
+}
+
+.effectBinario{
+    overflow:hidden;
+
 }

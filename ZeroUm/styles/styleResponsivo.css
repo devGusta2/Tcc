@@ -1,0 +1,26 @@
+@media screen and (max-width:768px){
+    .btn_menu_header{
+        display: block;
+    }
+    .nav_header{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        height: 100%;
+        gap: 5px;
+        width: 35vw;
+        text-align: center;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        background-color: gray;
+        border-radius: 10px;
+        /* PROBLEMAAAAAAAAAAAAAAAAAAAAA */
+    }
+    .nav_header a{
+        margin: auto;
+    }
+    .logoHeader{
+        margin-right: 42%;
+    }
+}

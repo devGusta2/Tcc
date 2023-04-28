@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/indexStyles.css">
     <link rel="stylesheet" type="text/css" href="IconsStyle.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styleResponsivo.css">
+    <link rel="icon" type="image/png" href="./img/logoZeroUm2.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
     <body>
@@ -14,7 +16,7 @@
             <!--Header -->
             <header class="header" id="header">
                 <button onclick="toggleSidebar()"class="btn_menu_header" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
                 </button>
@@ -46,12 +48,21 @@
                 </div>
                 <div class="progresso">
                     <div id="scroll-progresso"></div>
+                    <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-mala">
                </div>
+               <div class="progresso1">
+                     <div id="scroll-progresso1"></div>
+                </div>
             </div>
                 <div class="contentBodyMain">
                     <div class="logoBodyBox">
                         <img src="./img/logoZeroUmok.png" alt="logo" class="logoBody">
                      </div>
+                     <!-- <div class="effectBinario">
+                        <canvas id="canvas">
+                            
+                        </canvas>
+                     </div> -->
                      <section class="quemSomos" id="home">
                          <div class="titleSection" id="targetsobreNos">
                              <h1 id="title1">Sobre nós</h1>
@@ -71,7 +82,7 @@
                      
                     
                      
-                     <section class="init-hidden" >
+                     <!-- <section class="init-hidden" >
                         <h1 class="sectionTextLeft" id="equipe">Integrantes da equipe</h1>
                         <div class="container-equipe">
                             <div class="card">
@@ -235,7 +246,7 @@
                                 </div>
                             </div>
                          </div>
-                     </section>
+                     </section> -->
 
                      <section  class="servicos">
                         <div class="titleSections">
@@ -246,7 +257,7 @@
                         </div>
                      </section>
 
-                     <section class="init-hidden" >
+                     <section class="init-hidden" id="projetoSection">
                         <h1 class="sectionTextRight" id="projetos">Nossos projetos</h1>
                         <div class="slider">
                             <div class="slides">
