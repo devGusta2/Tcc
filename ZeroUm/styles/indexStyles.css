@@ -302,9 +302,21 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size:7pt;
 }
 
 .footerColum{
     display: flex;
     flex-direction: column;
+}
+
+
+
+.logoFooter{
+        margin-left: 39%;
+}
+
+#logoFooter{
+    height: 5em;
+    width: 20em;
 }

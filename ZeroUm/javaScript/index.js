@@ -1,4 +1,3 @@
-//variaveis do Header
 var header=document.getElementById('header');
 var navHeader=document.getElementById('nav_header');
 var btn_menu_header=document.getElementById('btnMenuHeader');
@@ -6,7 +5,7 @@ var content=document.getElementById('content');
 
 var showSidebar=false;
 
-//funções Header responsivo
+
 function toggleSidebar(){   
     showSidebar=true;
 
@@ -44,11 +43,11 @@ window.addEventListener('resize', function(event){
 });
 
 
-//teste Animation Color Bar
-var linhaColorida=document.getElementById('AnimationLine');
+//teste//teste
+var linhaColorida=document.getElementById('frufru2');
 var textServicos=document.getElementById('servicosText');
 
-//efeito observerIntersection (Efeito de aparecer os itens quando estiver visivel na tela)
+//efeito observerIntersection
 
 const observer= new IntersectionObserver(entries=>{
     console.log(entries);
@@ -68,10 +67,17 @@ const observer= new IntersectionObserver(entries=>{
 })
     
 Array.from(document.querySelectorAll('.init-hidden')).forEach(element=>{
-    observer.observe(element);
+    observer.observe(element);  
 }
     )
     
 document.querySelectorAll()
 
 
+
+
+
+document.querySelector('a[href="#secao"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#secao').scrollIntoView({ behavior: "smooth" });
+  });

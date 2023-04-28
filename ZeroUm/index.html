@@ -26,9 +26,9 @@
                           </svg>
                     </button>
                     <a class="cabecalho_link" href="#">Home</a>
-                    <a class="cabecalho_link" href="#">Quem Somos</a>
+                    <a class="cabecalho_link" href="#" id="btn-sobreNos">Quem Somos</a>
                     <a class="cabecalho_link" href="#">Projetos</a>
-                    <a class="cabecalho_link" href="#">Fale Conosco</a>
+                    <a class="cabecalho_link" href="#secao1">Fale Conosco</a>
                 </div>
             </header>
 
@@ -46,8 +46,8 @@
                     <div class="logoBodyBox">
                         <img src="./img/logoZeroUm.png" alt="logo" class="logoBody">
                      </div>
-                     <section class="quemSomos">
-                         <div class="titleSection">
+                     <section class="quemSomos" id="sobreNos">
+                         <div class="titleSection" id="targetsobreNos">
                              <h1 id="title1">Sobre nós</h1>
                          </div>
                          <p class="descSobreNos">
@@ -76,26 +76,27 @@
                      </section>
                      <section  class="servicos">
                         <div class="titleSections">
-                            <!-- <div id="AnimationLine" class="init-hidden">
+                            <!-- <div id="frufru2" class="init-hidden">
 
                             </div> -->
                             <h1 class="init-hidden" id="sectionTextRight">Serviços</h1>
                         </div>
                      </section>
-                     <section>
-                            <h1 id="sectionTextLeft">Equipe</h1>
-                     </section>
-                     <section>
-                            <h1 id="sectionTextRight">Projetos</h1>
-                     </section>
-                     <section>
-                            <h1 id="sectionTextLeft">Video</h1>
-                     </section>
-                     <section>
-                        <h1 id="sectionTextRight">Contato</h1>
-                    </section>
 
-                    
+                     <section class="init-hidden" id="sectionTextLeft">
+                        <h1>Equipe</h1>
+                     </section>
+
+                     <section class="init-hidden" id="sectionTextRight">
+                        <h1>Projetos</h1>
+                     </section>
+
+                     <section class="init-hidden" id="sectionTextLeft">
+                        <h1>Videos</h1>
+                     </section>
+                     <section class="init-hidden" id="sectionTextRight">
+                        <h1>Contato</h1>
+                     </section>
                      <!-- <div tabindex="0"class="content" id="content" onclick="disbleSidebar()">
                          <h1>funfa</h1>
                      </div> -->
@@ -109,6 +110,9 @@
             </main>
             <hr class="linha2">
             <footer>
+                <div class="logoFooter">
+                    <img src="./img/logoZeroUm.png" id="logoFooter">
+                </div>
                 <div class="footerContent">
                     <div class="footerColum">
                         <h1>Links</h1>
@@ -117,7 +121,7 @@
                         <h1>Trabalhe Conosoco</h1>
                     </div>
                     <div class="footerColum">   
-                        <h1>Contato</h1>
+                        <h1 id="secao1">Contato</h1>
                     </div>  
                 </div>
             </footer>
