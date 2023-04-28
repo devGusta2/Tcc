@@ -89,7 +89,11 @@ function indicaProgresso() {
     }
     if(rolagem>20){
         document.getElementById("scroll-progresso1").style.animationName='line1';
-        
+        document.getElementById("icon-tool").style.opacity='1'; 
+    }
+    if(rolagem>30){
+        document.getElementById("scroll-progresso2").style.animationName='line1';
+        document.getElementById("icon-video").style.opacity='1'; 
     }
     console.log(10*rolagem+"%");
 
