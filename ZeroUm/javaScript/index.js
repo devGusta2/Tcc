@@ -70,15 +70,9 @@ Array.from(document.querySelectorAll('.init-hidden')).forEach(element=>{
     observer.observe(element);  
 }
     )
+    
 
-
-
-
-
-
-
-
-
+    
 
 //indicador de progresso frufru do Renan
 function indicaProgresso() {
@@ -104,3 +98,27 @@ function indicaProgresso() {
 window.onscroll=function(){
     indicaProgresso();
 }
+
+
+
+
+
+
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function(){
+    nextImage();
+}, 5000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}
+
+
+
