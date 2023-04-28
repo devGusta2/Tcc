@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/indexStyles.css">
+    <link rel="stylesheet" type="text/css" href="IconsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/indexStyleResponsivo.css">
     <title>Home</title>
 </head>
     <body>
@@ -12,7 +15,7 @@
             <!--Header -->
             <header class="header" id="header">
                 <button onclick="toggleSidebar()"class="btn_menu_header" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" id="bnt-hamburguer">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
                 </button>
@@ -21,32 +24,38 @@
                 </div>
                 <div class="nav_header" id="nav_header">
                     <button onclick="disbleSidebar()" class="btn_menu_header" id="btnMenuHeader" > 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <svg xmlns="    " width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                           </svg>
                     </button>
-                    <a class="cabecalho_link" href="#">Home</a>
-                    <a class="cabecalho_link" href="#" id="btn-sobreNos">Quem Somos</a>
-                    <a class="cabecalho_link" href="#">Projetos</a>
-                    <a class="cabecalho_link" href="#secao1">Fale Conosco</a>
+                    <a class="cabecalho_link" href="index.html">Home</a>
+                    <a class="cabecalho_link" href="#quem" id="btn-sobreNos">Quem Somos</a>
+                    <a class="cabecalho_link" href="#sectionProjeto">Projetos</a>
+                    <a class="cabecalho_link" href="#faleConoscoSection">Fale Conosco</a>
                 </div>
             </header>
 
             <hr id="linha1">
-            
+          
             <!--Principal -->
-            <main class="mainContent">
-                <div id="frufru">
-                    <div class="VectorLine" >
-                        <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
-                    </div>
+           
+           
+            <div id="frufru">
+                <div class="VectorLine" >
+                    <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
                 </div>
-               
+                <div class="progresso">
+                    <div id="scroll-progresso"></div>
+               </div>
+            </div>
+            <!-- EFEITO LINHA PROGRESSO **************************************************************** -->
+            <main class="mainContent">
+            
                 <div class="contentBodyMain">
                     <div class="logoBodyBox">
                         <img src="./img/logoZeroUm.png" alt="logo" class="logoBody">
                      </div>
-                     <section class="quemSomos" id="sobreNos">
+                     <section class="quemSomos" id="quem">
                          <div class="titleSection" id="targetsobreNos">
                              <h1 id="title1">Sobre nós</h1>
                          </div>
@@ -76,26 +85,186 @@
                      </section>
                      <section  class="servicos">
                         <div class="titleSections">
-                            <!-- <div id="frufru2" class="init-hidden">
-
-                            </div> -->
+                            
                             <h1 class="init-hidden" id="sectionTextRight">Serviços</h1>
                         </div>
                      </section>
-
-                     <section class="init-hidden" id="sectionTextLeft">
-                        <h1>Equipe</h1>
+                     <!-- EQUIPE ************************************************************************* -->
+                     <section class="init-hidden" >
+                        <h1 id="sectionTextLeft">Equipe</h1>
+                        <div class="container-equipe">
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Alef.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Alef</h2>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Andre.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Andre</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/dreAlmeida"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Felipe.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Felipe</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/FelipeDevFroky"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Gustavo.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Gustavo</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/devGusta2"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Eu.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Henrique</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/RiqueRibeiro"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Johny.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Johny</h2>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/José.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>José</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/LanJyyy"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Julio.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Julio</h2>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Renan.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Renan</h2>
+                                        <div class="socialIcons">
+                                            <a href="https://github.com/RenanNeets"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="lines"></div>
+                                <div class="imgBx">
+                                    <img src="./img/equipe/Thiago.jpeg">
+                                </div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h2>Thiago</h2>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
                      </section>
 
-                     <section class="init-hidden" id="sectionTextRight">
-                        <h1>Projetos</h1>
+                     <section class="init-hidden"  id="sectionProjeto">
+                        <h1 id="sectionTextRight">Projetos</h1>
                      </section>
 
-                     <section class="init-hidden" id="sectionTextLeft">
-                        <h1>Videos</h1>
+                     <section class="init-hidden" >
+                        <h1 id="sectionTextLeft">Videos</h1>
                      </section>
-                     <section class="init-hidden" id="sectionTextRight">
-                        <h1>Contato</h1>
+                     <section class="init-hidden" id="faleConoscoSection">
+                        <h1 id="sectionTextRight">Contato</h1>
                      </section>
                      <!-- <div tabindex="0"class="content" id="content" onclick="disbleSidebar()">
                          <h1>funfa</h1>
@@ -109,7 +278,7 @@
                 </div>
             </main>
             <hr class="linha2">
-            <footer>
+            <footer class="footer">
                 <div class="logoFooter">
                     <img src="./img/logoZeroUm.png" id="logoFooter">
                 </div>
@@ -121,7 +290,7 @@
                         <h1>Trabalhe Conosoco</h1>
                     </div>
                     <div class="footerColum">   
-                        <h1 id="secao1">Contato</h1>
+                        <h1>Contato</h1>
                     </div>  
                 </div>
             </footer>

@@ -70,14 +70,37 @@ Array.from(document.querySelectorAll('.init-hidden')).forEach(element=>{
     observer.observe(element);  
 }
     )
+
+
+
+
+
+
+
+
+
+
+//indicador de progresso frufru do Renan
+function indicaProgresso() {
+    const scroll =document.documentElement.scrollTop;
+    var altura = document.documentElement.scrollHeight-
+    document.documentElement.clientHeight;
+
+    var rolagem=(scroll/altura)*100;
     
-document.querySelectorAll()
+    
+    if(rolagem>10){
+        document.getElementById("scroll-progresso").style.animationName='line1';
+    }
+    console.log(10*rolagem+"%");
 
+     // if(rolagem>50){
+    //     document.getElementById("scroll-progresso").style.width=50+"%";
+    // }else{
+    //     document.getElementById("scroll-progresso").style.width=40+"%";
+    // }
+}
 
-
-
-
-document.querySelector('a[href="#secao"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector('#secao').scrollIntoView({ behavior: "smooth" });
-  });
+window.onscroll=function(){
+    indicaProgresso();
+}

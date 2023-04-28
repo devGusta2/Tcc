@@ -1,3 +1,4 @@
+
 @import url('https://fonts.cdnfonts.com/css/abnes');
 
 /* @font-face{
@@ -29,7 +30,7 @@
     z-index: 1;
 }
 #btnPesquisa{
-    height: 3.95em;
+    height: 3.5em;
     width: 15em;
     margin-top: 2%;
     background-color: black;
@@ -55,6 +56,7 @@
 body{
     color: black;
     font-family: 'logoFont','Times','serif';
+    user-select: none;
 }
 .titleSection{
     text-align: center;
@@ -99,8 +101,7 @@ body{
 
 
 #frufru{
-    background-attachment: fixed;
-    background-color: aqua;
+  
     height: 20em;
     width: 3px;
     margin-left: 10%;
@@ -109,26 +110,7 @@ body{
     background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
 }
 
-#frufru2{
-    background-attachment: fixed;
-    background-color: aqua;
-    height: 0px;
-    width: 3px;
-    margin-left: -200%;
-    margin-top: -155%;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    background: rgb(21,9,127);
-    background: linear-gradient(90deg, rgba(21,9,127,1) 11%, rgba(46,57,245,1) 50%, rgba(171,83,242,1) 93%);
-}
-@keyframes pfv{
-    from{
-        height: 0px;
-    }
-    to{
-        height: 50em;
-    }
-}
+
 .nav_header a{
     margin-right: 3em;
     position: relative;
@@ -177,16 +159,10 @@ body{
 }
 
 
-.linhaColorida{
-    background-color: blue;
-    width: 7px;
-    height: 10em;
-    margin-left: 15%;
-}
 
-::-webkit-scrollbar{
-    width: 0px;
-}
+/* ::-webkit-scrollbar{
+    width: 2px;
+} */
 .btn_menu_header{
      display:none; 
     background-color: transparent;
@@ -195,41 +171,6 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width:768px){
-    .btn_menu_header{
-        display: block;
-    }
-    .nav_header{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 0;
-        height: 100%;
-        gap: 5px;
-        width: 35vw;
-     
-        text-align: center;
-        animation-duration: 1s;
-        margin-left: -100vw;
-        background-color: gray;
-        border-radius: 10px;
-        /* PROBLEMAAAAAAAAAAAAAAAAAAAAA */
-    }
-    .nav_header a{
-        margin: auto;
-    }
-    .logoHeader{
-        margin-right: 42%;
-    }
-}
-@keyframes showSidebar {
-        from{
-            margin-left: -100vw;
-        }
-        to{
-            margin-left: -5vw;
-        }
-}
 .linha2{
     box-shadow: 1px 1px 4px;
 }
@@ -260,6 +201,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+
 #sectionTextLeft{
     margin-left: 20%;
     margin-top: 20%;
@@ -311,12 +254,227 @@ body{
 }
 
 
-
+section{
+    min-height: 100vh;
+}
 .logoFooter{
-        margin-left: 39%;
+        margin-left: 37%;
+        margin-top: 5%;
 }
 
 #logoFooter{
     height: 5em;
     width: 20em;
+}
+
+
+
+/* Cards equipe */
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #000000;
+    margin: 10px;
+    border-radius: 80%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: rgb(115, 171, 189);
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: #5fe1e6;
+    transition: 0.5s;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    position: relative;
+    width: 220px;
+    height: 180px;
+    background: #333;
+    transition: 0.5s;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#DCDCDC,#DCDCDC,
+    #DCDCDC,transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .lines::before{
+    animation-play-state: running;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+.card .imgBx{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 120px;
+    border-radius: 3px;
+    height: 120px;
+    transform: translateX(-50%);
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,#808080,#808080,
+    #808080,transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .imgBx::before{
+    animation-play-state: running;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+}
+.card .imgBx::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+.card .imgBx img{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+.card:hover .imgBx img{
+    opacity: 1;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 73px 20px;
+    text-align: center;
+}
+.card .content .details h2{
+    font-size: 1.5em;
+    color: #45f3ff;
+    line-height: 1.2em;
+}
+.card:hover .content .details p{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.container-equipe{
+    position: relative;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+
+
+
+
+html { 
+    scroll-behavior: smooth;
+
+} 
+
+
+.progresso{
+    width: 3px;
+    height: 100%;
+    background-color: rgb(240,240,240);
+    
+}
+#scroll-progresso{
+    width: 3px;
+    height: 0%;
+    background-color:dodgerblue;
+    animation-name:line1;
+    animation: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* animation-play-state: paused; */
+   
+}
+
+
+@keyframes line1 {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+        
+    }
 }
