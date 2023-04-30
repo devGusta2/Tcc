@@ -23,7 +23,7 @@
     
 }
 #projetoSection{
-    margin-top: 158vh;
+    margin-top: 163vh;
     position: relative;
 }
 #projetos{
@@ -116,6 +116,7 @@ body{
 }
 
 #frufru{
+
     margin-left: 10%;
     margin-top: 30%;
     height: 50%;
@@ -124,7 +125,7 @@ body{
 }
 #progressLineDefault{
     background-attachment: fixed;
-    
+    position: relative;
     z-index: 1;
     height: 100vh;
     width: 5px;
@@ -148,7 +149,7 @@ body{
     
 }
 .contentBodyMain{
-    margin-top: -104vh;
+    margin-top: -107vh;
 }
 .nav_header a::after{
     content:" ";
@@ -177,6 +178,8 @@ body{
 }
 
 .logoBody{
+    position: relative;
+    z-index: 5;
     margin-top: 30px;
     margin-left: 3em;
     height: 4em;
@@ -370,6 +373,13 @@ section {
 
 /* Cards equipe */
 
+#equipe-section{
+    background-color: #79909D;
+    margin-top: -10%;
+    min-height: 170vh;
+    color: white;
+}
+
 .socialIcons{
     display: flex;
     justify-content: center;
@@ -526,7 +536,7 @@ section {
 .container-equipe{
     position: relative;
     display: flex;
-    padding: 80px 40px;
+    margin-top: 20%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -539,7 +549,7 @@ section {
     width: 800px;
     height: 400px;
     overflow: hidden;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .slides{
     width: 400%;
@@ -621,7 +631,7 @@ section {
 }
 
 #servicos{
-    margin-top: 7em;
+    margin-top: 4em;
 }
 .servicos {
     margin-left: 46%;
@@ -634,6 +644,7 @@ section {
     margin-bottom: 30px;
     margin-top: 40%;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .effectBinario{
@@ -698,9 +709,9 @@ background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%
 #scroll-progresso2{
     width: 5px;
     height: 0%;
-    background: rgb(0,172,255);
-    background: rgb(0,172,255);
-    background: linear-gradient(180deg, rgba(0,172,255,1) 29%, rgba(76,203,50,1) 55%, rgba(255,0,14,1) 81%);
+    
+    background: rgb(255,0,0);
+background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, rgba(255,239,0,1) 71%);
     animation-name:line1;
     animation: ease-in-out;
     animation-duration: 0.5s;
@@ -725,15 +736,27 @@ background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%
     }
 }
 
+@keyframes line2{
+    from{
+        height: 100%;
+    }
+    to{
+        height: 0%;
+        
+    }
+}
+
 #section-contato{
     background-color: #5F7D8A;
     min-height: 110vh;
+    margin-top: 20%;
 
 }
 
 #section-video{
-    background-color: #78909C;
+    background-color: #91A4AE;
     min-height: 100vh;
+    margin-top: -40%;
 }
 
 
@@ -778,6 +801,15 @@ section{
     margin-top: 5em;    
     position: absolute;
 }
+.image-pitch{
+    border-radius: 80px;
+    margin-left: 25%;
+    margin-top: 3em;
+    width: 50%;
+    height: 20%;
+    box-shadow: 10px 10px 10px purple;
+    animation: go-back 1s infinite alternate;
+}
 .inptForm{
     display: flex;
     flex-direction: column;
@@ -800,4 +832,253 @@ section{
 .effectBinario{
     overflow:hidden;
 
+}
+
+
+/* FOOTER ******************************************************************* */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/* CARDS equipe************************************************* */
+
+.container-servicos{
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    margin-left: -60%;
+    margin-top: 5%;
+    align-items: center;
+    gap: 80px;
+}
+.card-serv{
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background: #333;
+    transition: 0.5s;
+
+}
+.card-serv:hover{
+    height: 450px;
+}
+.card-serv .lines-serv{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card-serv .lines-serv::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#45f3ff,#45f3ff,
+    #45f3ff,transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+.card-serv:hover .lines-serv::before{
+    animation-play-state: running;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card-serv .lines-serv::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+.card-serv .imgBx{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-serv:hover .imgBx{
+    top: 25px;
+    width: 200px;
+    height: 200px;
+}
+.card-serv .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,#ff3c7b,#ff3c7b,
+    #ff3c7b,transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+.card-serv:hover .imgBx::before{
+    animation-play-state: running;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+}
+.card-serv .imgBx::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #f6f6f6;
+}
+.card-serv .imgBx img{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+.card:hover .imgBx img{
+    opacity: 1;
+}
+.card-serv .content-serv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card-serv .content-serv .details-serv{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+.card-serv:hover .content-serv .details-serv{
+    transform: translateY(0px);
+}
+.card-serv .content-serv .details-serv h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #45f3ff;
+    line-height: 1.2em;
+}
+.card-serv .content-serv .details-serv p{
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-serv:hover .content-serv .details-serv p{
+    opacity: 1;
+}
+.card-serv .content-serv .details-serv a{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #45f3ff;
+    color: #292929;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-serv:hover .content-serv .details-serv p,
+.card-serv:hover .content-serv .details-serv a{
+    opacity: 1;
 }
