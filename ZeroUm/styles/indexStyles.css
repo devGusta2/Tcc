@@ -27,7 +27,7 @@
     position: relative;
 }
 #projetos{
-    margin-top: 50%;
+    margin-top: -0%;
 }
 #searchBarId{
     outline-color: blue;
@@ -68,27 +68,41 @@
     margin-left: 60%;
 }
 body{
-    color: black;
+    color: white;
     font-family: 'logoFont','Times','serif';
+    background: rgb(102,102,131);
+    background: linear-gradient(90deg, rgba(102,102,131,1) 4%, rgba(39,44,45,1) 100%);
     
 }
-.titleSection{
-    text-align: center;
-   
+
+#image-sobrenos{
+    margin-left: 40%;
+    margin-top: -30%;
+    width: 700px;
+    height:450px;
 }
+
+#targetsobreNos{
+    display: flex;
+    flex-direction: row;
+}
+
 #title1{
-    margin-right: 25%;
-    margin-top: 1em;
-    font-family: 'logoFont','Times','serif';
-    font-family: 'abnes', sans-serif;
-    font-size: 27pt;
-    text-shadow: 1px 10px 6.5px gray;
-    
-    
-    
+    margin-left: 12%;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
 }
+
+.sobreNos{
+    margin-left: 100px;
+    margin-bottom: 70px;
+
+}
+
 .quemSomos{
-  position: absolute;
+  position: absolute; 
+  
   margin-left:7.5%;
   margin-top: 20%;
 }
@@ -108,7 +122,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
     Font-weight:300;
-    color: black;
+    color: white;
     justify-content: space-between;
     height: 3em;
     margin-top: 20px;
@@ -269,9 +283,9 @@ body{
 .descSobreNos{
     text-align: left;
     margin-left: 12%;
-    margin-top: 10%;
+    margin-top: 2%;
     font-size: 20pt;
-    color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .parceiros{
@@ -347,10 +361,12 @@ section {
 
 
 /* ANIMACAO AQUI */
-.logoFooter{
-        margin-left: 35%;
-}
-
+#logoFooter{
+    margin-bottom: -140px;
+    height: 100px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite ;
+    }
 #logoFooter{
     margin-top: 30px;
     height: 100px;
@@ -374,7 +390,7 @@ section {
 /* Cards equipe */
 
 #equipe-section{
-    background-color: #79909D;
+ 
     margin-top: -10%;
     min-height: 170vh;
     color: white;
@@ -631,7 +647,9 @@ section {
 }
 
 #servicos{
-    margin-top: 4em;
+    margin-top: -0.8em;
+    font-size: 30pt;
+    margin-left: -60.5%;
 }
 .servicos {
     margin-left: 46%;
@@ -747,14 +765,14 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 }
 
 #section-contato{
-    background-color: #5F7D8A;
+ 
     min-height: 110vh;
     margin-top: 20%;
 
 }
 
 #section-video{
-    background-color: #91A4AE;
+
     min-height: 100vh;
     margin-top: -40%;
 }
@@ -1081,4 +1099,91 @@ footer{
 .card-serv:hover .content-serv .details-serv p,
 .card-serv:hover .content-serv .details-serv a{
     opacity: 1;
+}
+
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 10px 30px 20px;
+}
+.socialIcons2{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons2 a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons2 a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons2 a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons2 a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;    
+}
+.footerBottom p{
+    color: #fff;
+ 
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+#text-servico{
+    text-align: left;
+    font-size: 24pt;
+    margin-left: -60%;
+    margin-top: 3em;
 }
