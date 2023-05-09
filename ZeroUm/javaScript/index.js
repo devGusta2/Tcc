@@ -90,6 +90,7 @@ function indicaProgresso() {
         document.getElementById("scroll-progresso").style.animationName='line2';
         document.getElementById("icon-mala").style.opacity='0'; 
     }
+
     if(rolagem>20){
         document.getElementById("scroll-progresso1").style.animationName='line1';
         document.getElementById("icon-tool").style.opacity='1'; 
@@ -97,12 +98,20 @@ function indicaProgresso() {
         document.getElementById("scroll-progresso1").style.animationName='line2';
         document.getElementById("icon-tool").style.opacity='0'; 
     }
+
     if(rolagem>30){
         document.getElementById("scroll-progresso2").style.animationName='line1';
         document.getElementById("icon-video").style.opacity='1'; 
     }else{
         document.getElementById("scroll-progresso2").style.animationName='line2';
         document.getElementById("icon-video").style.opacity='0'; 
+    }
+      if(rolagem>40){
+        document.getElementById("scroll-progresso3").style.animationName='line1';
+        document.getElementById("icon-team").style.opacity='1'; 
+    }else{
+        document.getElementById("scroll-progresso3").style.animationName='line2';
+        document.getElementById("icon-team").style.opacity='0'; 
     }
     console.log(10*rolagem+"%");
 
@@ -188,3 +197,7 @@ var canvas = document.getElementById('canvas');
         }
 
 setInterval(draw,200);
+
+
+//teste idiomas
+

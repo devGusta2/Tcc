@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="IconsStyle.css">
     <link rel="stylesheet" href="./styles/styleResponsivo.css">
     <link rel="icon" type="image/png" href="./img/logoZeroUm2.jpg"/>
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <title>Home</title>
 </head>
@@ -23,7 +23,9 @@
                       </svg>
                 </button>
                 <div class="logoHeader">
-                    <a href="index.html"><img src="./img/ZeroUmDEFINITIVO.png" alt="logo" class="imgLogo"></a>
+                    <a href="index.html">
+                        <img src="./img/ZeroUmDEFINITIVO.png" alt="logo" class="imgLogo">
+                    </a>
                 </div>
                 <div class="nav_header" id="nav_header">
                     <button onclick="disbleSidebar()" class="btn_menu_header" id="btnMenuHeader" > 
@@ -31,13 +33,15 @@
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                           </svg>
                     </button>
-                    <a class="cabecalho_link" href="#home">Sobre Nós</a>
-                    <a class="cabecalho_link" href="#equipe" id="btn-sobreNos">Equipe</a>
-                    <a class="cabecalho_link" href="#projetos">Projetos</a>
-                    <a class="cabecalho_link" href="#video">Vídeo</a>
-                    <a class="cabecalho_link" href="#contato">Contato</a>
+                    <a class="cabecalho_link" href="#home" id="idioma-title-sobreNos">Sobre Nós</a>
+                    <a class="cabecalho_link" href="#equipe" id="idioma-title-Equipe">Equipe</a>
+                    <a class="cabecalho_link" href="#projetos" id="idioma-title-Projeto">Projetos</a>
+                    <a class="cabecalho_link" href="#video" id="idioma-title-Video">Vídeo</a>
+                    <a class="cabecalho_link" href="#contato" id="idioma-title-Contato">Contato</a>
                 </div>
             </header>
+
+            
 
             <hr id="linha1">
             
@@ -63,6 +67,13 @@
                     <div id="scroll-progresso2"></div>
                     <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
                </div>
+               <div class="progresso3">
+                <div id="scroll-progresso3"></div>
+                <img src="./img/icons/teamIcon.png" alt="icon-team" id="icon-team">
+           </div>
+           
+               
+               
                
 
             </div>
@@ -79,12 +90,12 @@
                      <section class="quemSomos" id="home">
                         <h1 id="title1" class="sobreNos">Sobre nós</h1>
                          <div class="titleSection" id="targetsobreNos">
-                             <img src="./img/sobrenos.jpg" id="image-sobrenos">
+                             <img src="./img/gifs-de-programador-29.gif "id="image-sobrenos">
                          </div>
                          <p class="descSobreNos">
-                        Na nossa empresa, somos apaixonados por tecnologia e inovação.
-                        Desde a nossa fundação, buscamos sempre
-                        estar na vanguarda da transformação digital,desenvolvendo
+                        Na nossa empresa, somos apaixonados por tecnologia e inovação.<br>
+                        Desde a nossa fundação, buscamos sempre<br>
+                        estar na vanguarda da transformação digital, desenvolvendo<br>
                         soluções criativas e eficientes para os desafios de negócios
                         dos nossos clientes.
                          </p>
@@ -136,58 +147,62 @@
                         <div class="titleSections">
                             <h1 class="init-hidden" id="servicos">Serviços</h1>
                         </div>
-                        <p id="text-servico">
-                            
-                        Nós fornecemos serviços em tecnologia, incluindo consultoria, desenvolvimento de aplicativos e integração de sistemas.<br>
-                        Nossa equipe trabalha em estreita colaboração com nossos clientes para fornecer soluções personalizadas e eficientes.<br>
-                        </p>
                         <div class="container-servicos">
-                            <div class="card-serv">
-                                <div class="lines-serv"></div>
-                                <div class="imgBx">
-                                    <img src="img/icons/html-css-javascript2.png">
+                            <div class="containerCard">
+                                <div class="card01">
+                                    <div class="lines"></div>
+                                    <div class="imgBx">
+                                        <img src="img/icons/html-css-javascript2.png">
+                                    </div>
+                                    <div class="contentCard">
+                                        <div class="details">
+                                            <h2>Serviço Web</h2>
+                                            <p>Serviço para criação de Sites.</p>
+                                            <a href="#">Pedir Serviço</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content-serv">
-                                    <div class="details-serv">
-                                        <h2>Serviço Web<h2>
-                                        <p>Neste Serviço ultilizaremos como ferramenta o CSS, JS e HTML.</p>
-                                        <a href="#">Pedir Serviços</a>
+                                <div class="card01">
+                                    <div class="lines"></div>
+                                    <div class="imgBx">
+                                        <img src="img/icons/react2.png">
+                                    </div>
+                                    <div class="contentCard">
+                                        <div class="details">
+                                            <h2>Serviço Mobile</h2>
+                                            <p>Serviço para criação de App's.</p>
+                                            <a href="#">Pedir Serviço</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card01">
+                                    <div class="lines"></div>
+                                    <div class="imgBx">
+                                        <img src="img/icons/arduino.png">
+                                    </div>
+                                    <div class="contentCard">
+                                        <div class="details">
+                                            <h2>Serviço Robótico</h2>
+                                            <p>Serviço para criação de Maquinas.</p>
+                                            <a href="#">Pedir Serviço</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-serv">
-                                <div class="lines-serv"></div>
-                                <div class="imgBx">
-                                    <img src="img/icons/react2.png">
-                                </div>
-                                <div class="content-serv">
-                                    <div class="details-serv">
-                                        <h2>Serviço Mobile</h2>
-                                        <p>Neste serviço ultilizaremos como ferramenta o React Native e TypeScript.</p>
-                                        <a href="#">Pedir Serviços</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-serv">
-                                <div class="lines-serv"></div>
-                                <div class="imgBx">
-                                    <img src="img/icons/arduino.png">
-                                </div>
-                                <div class="content-serv">
-                                    <div class="details-serv">
-                                        <h2>Serviço Robótico</h2>
-                                        <p> Neste serviço ultilizaremos o Arduino, Thinker Card e ferramentas complimentares (baterias,motores,etc).</p>
-                                        <a href="#">Pedir Serviços</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="desc-servicos">
+                            <p id="text-servico">
+                            
+                                Nós fornecemos serviços em tecnologia, incluindo desenvolvimento de aplicativos e integração de sistemas.
+                                Nossa equipe trabalha em estreita colaboração com nossos clientes para fornecer soluções personalizadas e eficientes.
+                                </p>
                         </div>
                      </section>                    
                   
 
                      
                      <section class="init-hidden" id="section-video" >
-                        <h1 id="video">Videos</h1>
+                        <h1 id="video">Vídeo</h1>
                         <img class="image-pitch" src="img/image-pitch.jpg" alt="imagem test">
                      </section>
 
@@ -368,15 +383,20 @@
                             <div id="contatoTittle">
                                 <h1 id="contato">Contato</h1>
                             </div>
-                            <div class="boxForm">
-                                <div class="inptForm">
-                                    <input type="text" id="inptText">
-                                    <textarea name="" id="inptTextArea" cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
                             <div class="imageIconContato">
                                 <img src="./img/icons/chatIcon.png" alt="iconChat" id="iconChatContato">
                             </div>
+                            <div class="boxForm">
+                                <h3 id="text-msng-box-form">Envie uma mensagem!</h3>
+                                <div class="inptForm">
+                                    <input type="text" id="inptText" placeholder="Nome completo">
+                                    <input type="text" id="inptText" placeholder="E-mail"> 
+                                    <textarea name="" id="inptTextArea" cols="30" rows="10" resize="none" ></textarea>
+                                    <div id="robot-test"class="g-recaptcha" data-sitekey="6Lee6-AlAAAAABy1fP2gezouCx-IMqFXUEdObEy6"></div>
+                                    <input type="submit" value="enviar" id="btn-submit-contact">
+                                </div>
+                            </div>
+                           
                         </div>
                      </section>
 
