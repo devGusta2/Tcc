@@ -148,56 +148,5 @@ function nextImage(){
 }
 
 
-
-//efeito código binário.
-
-var canvas=document.getElementById('canvas');
-var ctx=canvas.getContext('2d');
-
-canvas.height= window.innerHeight;
-canvas.widht= window.innerWidth;
-
-var texts='123456789'.split('');
-var fontSize=16;
-var coluna=canvas.widht/fontSize;
-var drops=[];
-
-for(varx=0;x<coluna;x+=1){
-    drops[x]=1;
-
-}
-var canvas = document.getElementById('canvas');
-        var ctx = canvas.getContext('2d');
-
-        canvas.height = window.innerHeight;
-        canvas.width = window.innerWidth;
-
-        var texts = '1'.split('');
-        var fontSize =20;
-        var columns = canvas.width/fontSize;
-        var drops = [];
-        for(var x =0; x < columns; x++){
-            drops[x] = 1;
-        }
-        function draw(){
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
-            ctx.fillRect(0,0,canvas.width,canvas.height);
-            ctx.fillStyle = '#000000';
-            ctx.font = fontSize+ 'px arial';
-            for(var i =0; i < drops.length; i+=2){
-                var text = texts[Math.floor(Math.random()*texts.length)];
-                ctx.fillText(text,i*fontSize,drops[i]*fontSize);
-
-                if(drops[i]*fontSize > canvas.height || Math.random() > 0.60){
-                    drops[i] = 0;
-                }
-
-                drops[i]++;
-            }
-        }
-
-setInterval(draw,200);
-
-
 //teste idiomas
 

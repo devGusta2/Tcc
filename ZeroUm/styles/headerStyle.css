@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+.header,a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    Font-weight:00;
+    color: white;
+    justify-content: space-between;
+    height: 2.5em;
+    margin-top: 20px;
+    gap: 3em;
+}
+.btn_menu_header{
+    display:none; 
+   background-color: transparent;
+   border:none;
+   color: white;
+   cursor: pointer;
+}
+.nav_header a::after{
+    content:" ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.nav_header a:hover::after{
+    width: 100%;
+}
+    
+.logoHeader{
+    margin-left: 3em;
+}
+.nav_header a{
+    margin-right: 3em;
+    position: relative;
+    
+}

@@ -12,47 +12,13 @@
     embedded-opentype
     svg*
 */
+:root{
+    --azul--color:#003140;
+}
 
 
 
-.searchSection{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    margin-left: 12%;
-    
-}
-#projetoSection{
-    margin-top: 163vh;
-    position: relative;
-}
-#projetos{
-    margin-top: -0%;
-}
-#searchBarId{
-    outline-color: blue;
-    height: 3.5em;
-    width: 25em;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: 2%;
-    z-index: 1;
-}
-.VectorLine{
-    margin-top: -20em;
-}
-#btnPesquisa{
-    height: 3.95em;
-    width: 15em;
-    margin-top: 2%;
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: -1em;
-    z-index: 2;
-}
+
 .parceiro1{
     width: 12em;
     height: 6em;
@@ -69,96 +35,52 @@
     font-size: 28pt;
 }
 body{
-    color: white;
+    color:black;
     font-family: 'logoFont','Times','serif';
-    background: rgb(102,102,131);
-    background: linear-gradient(90deg, rgba(102,102,131,1) 4%, rgba(39,44,45,1) 100%);
     
 }
 
 #image-sobrenos{
-    margin-left: 70%;
-    margin-top: -20%;
-    width: 600px;
-    height:400px;
-    box-shadow: 1px 1px 20px white;
+    margin-left: -5%;
+    margin-top: 0%;
+    width: 500px;
+    height:300px;
+   
 }
 
-#targetsobreNos{
-    display: flex;
-    flex-direction: row;
-}
 
-#title1{
-    margin-left: 12%;
-    margin-top: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30pt;
-}
-#servicos{
 
-}
-#projetos{
-    margin-left: 40%;
-    margin-top: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30pt;
-}
 
-.sobreNos{
-    margin-left: 100px;
-    margin-bottom: 70px;
 
-}
-
-.quemSomos{
-  position: absolute; 
-  
-  margin-left:7.5%;
-  margin-top: 20%;
-}
 
 #title2{
    text-align: center;
-   margin-top: 7em;
+   margin-top: 0em;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25pt;
+   margin-left: 25em;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-  
-}
-.header,a{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 2;
-    Font-weight:300;
-    color: white;
-    justify-content: space-between;
-    height: 3em;
-    margin-top: 20px;
-    gap: 3em;
-}
 
-#frufru{
-
+#line1{
     margin-left: 10%;
-    margin-top: 30%;
-    height: 50%;
+    margin-top: 100%;
+    height: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 6%, rgba(102,4,214,1) 33%, rgba(145,4,214,1) 60%);
 }
 #progressLineDefault{
-    background-attachment: fixed;
-    position: relative;
     z-index: 1;
-    height: 100vh;
-    width: 5px;
-    margin-left: 10%;
-    margin-top: 10%;
-    
+    width: 3px;
+    margin-left: -3em;
+    margin-top: -22em;
 }
-
+#progressLineDefault1{
+    z-index: 1;
+    width: 3px;
+    margin-left: -3em;
+    margin-top: -22em;
+}
 
 @keyframes pfv{
     from{
@@ -168,29 +90,11 @@ body{
         height: 50em;
     }
 }
-.nav_header a{
-    margin-right: 3em;
-    position: relative;
-    
-}
+
 .contentBodyMain{
-    margin-top: -107vh;
+    margin-top: 0vh;
 }
-.nav_header a::after{
-    content:" ";
-    width: 0%;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-.nav_header a:hover::after{
-    width: 100%;
-}
-    
+
 .cabecalho_link{
     font-weight: bold;
 }    
@@ -225,12 +129,19 @@ body{
     }
 }
 
-.logoHeader{
-    margin-left: 3em;
+/* linhas coloridas */
+.VectorLine{
+    height: 100%;
+    background: rgb(145,4,214);
+    background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%, rgba(0,172,255,1) 85%);
+  
 }
 #linha1{
-    margin-top: -0.5em;
-    box-shadow: 1px 1px 4px black;
+    margin-top: 1em;
+    box-shadow: 1px 1px 400px white;
+    position: relative;
+    z-index: 1;
+    
 }
 
 
@@ -242,13 +153,7 @@ body{
 }
 
 
-.btn_menu_header{
-     display:none; 
-    background-color: transparent;
-    border:none;
-    color: black;
-    cursor: pointer;
-}
+
 
 
 @keyframes showSidebar {
@@ -272,9 +177,9 @@ body{
 #icon-mala,#icon-tool,#icon-video,#icon-team{
     height: 6em;
     width: 5.5em;
-    margin-left: -43px;
+    margin-left:1.8em;
+    margin-top: -2em;
     animation-name:animIcon;
-    position: absolute;
     opacity: 0;
     transition: opacity 1s linear;
     transition-delay: 0.5s;
@@ -300,15 +205,91 @@ body{
     }
 }
 /* FIM ICONS************************************************************************************************ */
-
+/* SOBRENÓS********************************** */
 .descSobreNos{
     text-align: left;
-    margin-left: 12%;
-    margin-top: 10%;
-    font-size: 20pt;
+    margin-left: 0%;
+    margin-top: 5%;
+    font-size: 16.8pt;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+#title1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    margin-left: 1.4em;
+}
+
+.sobreNos{
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+    margin-top: -15%;
+    background-color: #003140;
+    color: white;
+  
+}
+.contentSobreNos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50vh;
+    margin: auto;
+    margin-top: 28%;
+    margin-left: 10%;
+    gap: 15em;
+   
+   
+}
+.textSobreNos{
+    margin-top: 12.7%;
+}
+
+.textEtitle{
+    display: flex;
+    flex-direction: column;
+   
+}
+.quemSomos{
+  margin-left:7.5%;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 20em ;
+}
+/* gif */
+
+.gifBox{
+   margin-left: -3em;
+}
+.titleSobreNos,.titleArea{
+    display: flex;
+    flex-direction: row;
+}
+/* FIM SOBRENÓS********************************** */
+/* PROJETOS */
+.titleProjetos{
+    display: flex;
+    flex-direction: row;
+}
+.projetoSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+    margin-left: 10%;
+}
+#projetos{
+    margin-top: -0%;
+}
+
+#projetos{
+    margin-left: 40%;
+    margin-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+}
+/*TESTE********************************** */
+
 .parceirosBox{
     margin-left: -120%;
 }
@@ -366,232 +347,13 @@ section {
 } */
 
 
-
-.footerContent{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:7pt;
-}
-
-.footerColum{
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* ANIMACAO AQUI */
-#logoFooter{
-    margin-bottom: -140px;
-    height: 100px;
-    transform: translateY(0px);
-    animation: float 5s ease-in-out infinite ;
-    }
-#logoFooter{
-    margin-top: 30px;
-    height: 100px;
-    transform: translateY(0px);
-    animation: float 5s ease-in-out infinite ;
-}
-@keyframes float {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-30px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-#equipe{
-    font-size: 28pt;
-    margin-left: 38%;
-}
-
-/* Cards equipe */
-
-#equipe-section{
- 
-    margin-top: -40%;
-    min-height: 170vh;
-    color: white;
-}
-
-.socialIcons{
-    display: flex;
-    justify-content: center;
-}
-.socialIcons a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: #000000;
-    margin: 10px;
-    border-radius: 80%;
-}
-.socialIcons a i{
-    font-size: 2em;
-    color: rgb(115, 171, 189);
-    opacity: 0.9;
-}
-.socialIcons a:hover{
-    background-color: #111;
-    transition: 0.5s;
-}
-.socialIcons a:hover i{
-    color: #5fe1e6;
-    transition: 0.5s;
-}
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.card{
-    position: relative;
-    width: 220px;
-    height: 180px;
-    background: #333;
-    transition: 0.5s;
-}
-.card .lines{
-    position: absolute;
-    inset: 0;
-    background: #000;
-    overflow: hidden;
-}
-.card .lines::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 120px;
-    background: linear-gradient(transparent,#DCDCDC,#DCDCDC,
-    #DCDCDC,transparent);
-    animation: animate 4s linear infinite;
-    animation-play-state: paused;
-}
-.card:hover .lines::before{
-    animation-play-state: running;
-}
-@keyframes animate{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
-.card .lines::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #292929;
-}
-.card .imgBx{
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    width: 120px;
-    border-radius: 3px;
-    height: 120px;
-    transform: translateX(-50%);
-    background: #000;
-    transition: 0.5s;
-    z-index: 10;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card .imgBx::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 150px;
-    transform: translate(-50%,-50%);
-    background: linear-gradient(transparent,#808080,#808080,
-    #808080,transparent);
-    animation: animate2 6s linear infinite;
-    animation-play-state: paused;
-}
-.card:hover .imgBx::before{
-    animation-play-state: running;
-}
-@keyframes animate2{
-    0%{
-        transform: translate(-50%,-50%)rotate(360deg);
-    }
-    100%{
-        transform: translate(-50%,-50%)rotate(0deg);
-    }
-}
-.card .imgBx::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #292929;
-}
-.card .imgBx img{
-    position: absolute;
-    width: 100px;
-    z-index: 1;
-    opacity: 0.5s;
-    transition: 0.5s;
-}
-.card:hover .imgBx img{
-    opacity: 1;
-}
-.card .content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-.card .content .details{
-    padding: 73px 20px;
-    text-align: center;
-}
-.card .content .details h2{
-    font-size: 1.5em;
-    color: #45f3ff;
-    line-height: 1.2em;
-}
-.card:hover .content .details p{
-    opacity: 1;
-}
-
-.container-equipe{
-    position: relative;
-    display: flex;
-    margin-top: 20%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 80px;
-}
-
-/* Carrosel */
 .slider{
     margin: 0 auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
     margin-top: 5%;
+    margin-left: 15%;
 }
 .slides{
     width: 400%;
@@ -715,7 +477,6 @@ html {
 .progresso1{
     width: 3px;
     height: 100%;
-    
     margin-top: 6em;
 }
 .progresso2{
@@ -731,9 +492,9 @@ html {
 }
 #scroll-progresso{
     width: 5px;
-    height: 0%;
+    
     background: rgb(145,4,214);
-background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%, rgba(0,172,255,1) 85%);
+    background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%, rgba(0,172,255,1) 85%);
     animation-name:line1;
     animation: ease-in-out;
     animation-duration: 0.5s;
@@ -742,8 +503,8 @@ background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%
    
 }
 #scroll-progresso1{
-    width: 5px;
-    height: 0%;
+    width: 3px;
+    height: 100%;
     background: rgb(0,172,255);
     background: rgb(0,172,255);
     background: linear-gradient(180deg, rgba(0,172,255,1) 29%, rgba(76,203,50,1) 55%, rgba(255,0,14,1) 81%);
@@ -935,515 +696,10 @@ section{
 }
 
 
-/* FOOTER ******************************************************************* */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-footer{
-    background-color: #111;
-}
-.footerContainer{
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-.socialIcons{
+
+
+.teste{
     display: flex;
-    justify-content: center;
-}
-.socialIcons a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 50%;
-}
-.socialIcons a i{
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-.socialIcons a:hover{
-    background-color: #111;
-    transition: 0.5s;
-}
-.socialIcons a:hover i{
-    color: #fff;
-    transition: 0.5s;
-}
-.footerNav{
-    margin: 30px 0;
-}
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-.footerNav ul li a{
-    color: #fff;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-.footerNav ul li a:hover{
-    opacity: 1;
-}
-.footerBottom{
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-}
-.footerBottom p{
-    color: #fff;
-}
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
-}
-@media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    }
-    .footerNav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-}
-
-/* CARDS equipe************************************************* */
-
-.container-servicos{
-    display: flex;
-    padding: 80px 40px;
-    justify-content: center;
-    margin-left: -60%;
-    margin-top: 5%;
-    align-items: center;
-    gap: 80px;
-}
-.card-serv{
-    position: relative;
-    width: 350px;
-    height: 180px;
-    background: #333;
-    transition: 0.5s;
-
-}
-.card-serv:hover{
-    height: 450px;
-}
-.card-serv .lines-serv{
-    position: absolute;
-    inset: 0;
-    background: #000;
-    overflow: hidden;
-}
-.card-serv .lines-serv::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 120px;
-    background: linear-gradient(transparent,#45f3ff,#45f3ff,
-    #45f3ff,transparent);
-    animation: animate 4s linear infinite;
-    animation-play-state: paused;
-}
-.card-serv:hover .lines-serv::before{
-    animation-play-state: running;
-}
-@keyframes animate{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
-.card-serv .lines-serv::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #292929;
-}
-.card-serv .imgBx{
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    transform: translateX(-50%);
-    background: #000;
-    transition: 0.5s;
-    z-index: 10;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card-serv:hover .imgBx{
-    top: 25px;
-    width: 200px;
-    height: 200px;
-}
-.card-serv .imgBx::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 150px;
-    transform: translate(-50%,-50%);
-    background: linear-gradient(transparent,#ff3c7b,#ff3c7b,
-    #ff3c7b,transparent);
-    animation: animate2 6s linear infinite;
-    animation-play-state: paused;
-}
-.card-serv:hover .imgBx::before{
-    animation-play-state: running;
-}
-@keyframes animate2{
-    0%{
-        transform: translate(-50%,-50%)rotate(360deg);
-    }
-    100%{
-        transform: translate(-50%,-50%)rotate(0deg);
-    }
-}
-.card-serv .imgBx::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #f6f6f6;
-}
-.card-serv .imgBx img{
-    position: absolute;
-    width: 100px;
-    z-index: 1;
-    opacity: 0.5s;
-    transition: 0.5s;
-}
-.card:hover .imgBx img{
-    opacity: 1;
-}
-.card-serv .content-serv{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-.card-serv .content-serv .details-serv{
-    padding: 30px 20px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(145px);
-}
-.card-serv:hover .content-serv .details-serv{
-    transform: translateY(0px);
-}
-.card-serv .content-serv .details-serv h2{
-    font-size: 1.5em;
-    font-weight: 500;
-    color: #45f3ff;
-    line-height: 1.2em;
-}
-.card-serv .content-serv .details-serv p{
-    color: #fff;
-    opacity: 0;
-    transition: 0.5s;
-}
-.card-serv:hover .content-serv .details-serv p{
-    opacity: 1;
-}
-.card-serv .content-serv .details-serv a{
-    display: inline-block;
-    padding: 8px 15px;
-    background: #45f3ff;
-    color: #292929;
-    margin-top: 10px;
-    font-weight: 500;
-    text-decoration: none;
-    opacity: 0;
-    transition: 0.5s;
-}
-.card-serv:hover .content-serv .details-serv p,
-.card-serv:hover .content-serv .details-serv a{
-    opacity: 1;
-}
-
-
-footer{
-    background-color: #111;
-}
-.footerContainer{
-    width: 100%;
-    padding: 10px 30px 20px;
-}
-.socialIcons2{
-    display: flex;
-    justify-content: center;
-}
-.socialIcons2 a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 50%;
-}
-.socialIcons2 a i{
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-.socialIcons2 a:hover{
-    background-color: #111;
-    transition: 0.5s;
-}
-.socialIcons2 a:hover i{
-    color: #fff;
-    transition: 0.5s;
-}
-.footerNav{
-    margin: 30px 0;
-}
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-.footerNav ul li a{
-    color: #fff;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-.footerNav ul li a:hover{
-    opacity: 1;
-}
-.footerBottom{
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    max-width: 100%;    
-}
-.footerBottom p{
-    color: #fff;
- 
-}
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
-}
-@media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    }
-    .footerNav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-}
-
-
-#text-servico{
-    text-align: left;
-    font-size: 24pt;
-    margin-left: -55%;
-    margin-top: 3em;
-}
-
-#robot-test{
-    margin-left: 4em;
-    margin-bottom: -1em;
-}
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.containerCard{
-    position: relative;
-    display: flex;
-    padding: 80px 40px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 80px;
-}
-.card01{
-    position: relative;
-    width: 350px;
-    height: 180px;
-    background: #333;
-    transition: 0.5s;
-}
-.card01:hover{
-    height: 450px;
-}
-.card01 .lines{
-    position: absolute;
-    inset: 0;
-    background: #000;
-    overflow: hidden;
-}
-.card01 .lines::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 120px;
-    background: linear-gradient(transparent,#06e49a,#06e49a,
-    #06e49a,transparent);
-    animation: animate 4s linear infinite;
-    animation-play-state: paused;
-}
-.card01:hover .lines::before{
-    animation-play-state: running;
-}
-@keyframes animate{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
-.card01 .lines::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #292929;
-}
-.card01 .imgBx{
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    transform: translateX(-50%);
-    background: #000;
-    transition: 0.5s;
-    z-index: 10;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card01:hover .imgBx{
-    top: 25px;
-    width: 200px;
-    height: 200px;
-}
-.card01 .imgBx::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 150px;
-    transform: translate(-50%,-50%);
-    background: linear-gradient(transparent,#06e49a,#06e49a,
-    #06e49a,transparent);
-    animation: animate2 6s linear infinite;
-    animation-play-state: paused;
-}
-.card01:hover .imgBx::before{
-    animation-play-state: running;
-}
-@keyframes animate2{
-    0%{
-        transform: translate(-50%,-50%)rotate(360deg);
-    }
-    100%{
-        transform: translate(-50%,-50%)rotate(0deg);
-    }
-}
-.card01 .imgBx::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background-image: linear-gradient(to right, rgb(10, 14, 11), rgb(0, 211, 123));
-}
-.card01 .imgBx img{
-    position: absolute;
-    width: 100px;
-    z-index: 1;
-    opacity: 0.5s;
-    transition: 0.5s;
-}
-.card01:hover .imgBx img{
-    opacity: 1;
-}
-.card01 .contentCard{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-.card01 .contentCard .details{
-    padding: 47px 20px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(145px);
-}
-.card01:hover .contentCard .details{
-    transform: translateY(0px);
-}
-.card01 .contentCard .details h2{
-    font-size: 1.5em;
-    font-weight: 500;
-    color: #06e49a;
-    line-height: 1.2em;
-}
-.card01 .contentCard .details p{
-    color: #fff;
-    padding: 30px 15px;
-    opacity: 0;
-    font-size: 18px;
-    transition: 0.5s;
-}
-.card01:hover .contentCard .details p{
-    opacity: 1;
-}
-.card01 .contentCard .details a{
-    display: inline-block;
-    padding: 12px 20px;
-    background: #06e49a;
-    color: #292929;
-    margin-top: 10px;
-    font-weight: 500;
-    text-decoration: none;
-    opacity: 0;
-    transition: 0.5s;
-}
-.card01:hover .contentCard .details p,
-.card01:hover .contentCard .details a{
-    opacity: 1;
+    flex-direction: row;
+    
 }
