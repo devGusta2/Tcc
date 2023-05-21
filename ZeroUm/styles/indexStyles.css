@@ -32,7 +32,7 @@
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 4%;
     margin-left: -11%;
-    font-size: 28pt;
+    font-size: 25pt;
 }
 body{
     color:black;
@@ -43,12 +43,15 @@ body{
 #image-sobrenos{
     margin-left: -5%;
     margin-top: 0%;
-    width: 500px;
-    height:300px;
+    width: 700px;
+    height:200px;
    
 }
 
-
+#image-sobrenos1{
+    width: 500px;
+    height:300px;
+}
 
 
 
@@ -58,7 +61,8 @@ body{
    margin-top: 0em;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 25pt;
-   margin-left: 25em;
+   margin-left:128vh;
+   margin-top: -2em;
 }
 
 
@@ -132,8 +136,8 @@ body{
 /* linhas coloridas */
 .VectorLine{
     height: 100%;
-    background: rgb(145,4,214);
-    background: linear-gradient(180deg, rgba(145,4,214,1) 20%, rgba(58,33,255,1) 54%, rgba(0,172,255,1) 85%);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(0,0,0,1) 87%);
   
 }
 #linha1{
@@ -174,7 +178,7 @@ body{
     margin-top: 320px;
     margin-left: -45px;
 }
-#icon-mala,#icon-tool,#icon-video,#icon-team{
+#icon-mala{
     height: 6em;
     width: 5.5em;
     margin-left:1.8em;
@@ -184,13 +188,27 @@ body{
     transition: opacity 1s linear;
     transition-delay: 0.5s;
 }
-#icon-team{
+#icon-video{
+    height: 4.5em;
+    width: 4.5em;
+    margin-left: 1.5em;
+}
+.videoColumn{
+    display: flex;
+    flex-direction: column;
+}
+#icon-tool{
     height: 6em;
     width: 6em;
-    margin-left: -43px;
+    margin-left: -2.5em;
+}
+#icon-team{
+    height: 7em;
+    width: 7em;
+    margin-left: 3em;
     animation-name:animIcon;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s linear;
     transition-delay: 0.5s;
 }
@@ -209,8 +227,8 @@ body{
 .descSobreNos{
     text-align: left;
     margin-left: 0%;
-    margin-top: 5%;
-    font-size: 16.8pt;
+    margin-top: -4%;
+    font-size: 22pt;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -219,6 +237,13 @@ body{
     font-size: 25pt;
     margin-left: 1.4em;
 }
+#title3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt ;
+    margin-left: 1.4em;
+}
+
+
 
 .sobreNos{
     display: flex;
@@ -268,6 +293,16 @@ body{
 }
 /* FIM SOBRENÓS********************************** */
 /* PROJETOS */
+.descProjetos{
+    margin-left: 0%;
+    margin-top: 10%;
+    margin-right: 4em;
+    text-align: left;
+    font-size: 24pt;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 .titleProjetos{
     display: flex;
     flex-direction: row;
@@ -277,6 +312,7 @@ body{
     flex-direction: row;
     margin-top: 12%;
     margin-left: 10%;
+    
 }
 #projetos{
     margin-top: -0%;
@@ -295,7 +331,7 @@ body{
 }
 .parceiros{
     margin-left: 20%;
-    margin-top: 20%;
+    margin-top: 70%;
     min-height: 100vh;
 }
 .sectionTextRight{
@@ -436,8 +472,8 @@ section {
 
 #servicos{
     margin-top: -0.8em;
-    font-size: 30pt;
-    margin-left: 60%;
+    font-size: 25pt;
+    margin-left: 0%;
 }
 .servicos {
     margin-left: 46%;
@@ -446,21 +482,20 @@ section {
 }
 
 #video {
-    margin-left: 50%;
-    margin-bottom: 30px;
-    margin-top: 40%;
+
+    margin-left: -3em;
+    margin-top: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
+}
+#videoTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-left: 14.5em;
+    margin-top: 1em;
+    font-size: 25pt;
 }
 
-.effectBinario{
-    margin-left: 70%;
-    margin-top: -8em;
-    height: 20em;
-    width: 30em;
-    position: absolute;
-
-}
 
 
 html { 
@@ -482,13 +517,13 @@ html {
 .progresso2{
     width: 3px;
     height: 100%;
-    margin-top: 6em;
+    margin-top: 0em;
 }
 
 .progresso3{
     width: 3px;
     height: 100%;
-    margin-top: 6em;
+    margin-top: -2em;
 }
 #scroll-progresso{
     width: 5px;
@@ -519,7 +554,6 @@ html {
 #scroll-progresso2{
     width: 5px;
     height: 0%;
-    
     background: rgb(255,0,0);
 background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, rgba(255,239,0,1) 71%);
     animation-name:line1;
@@ -548,7 +582,6 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 #scroll-progresso3{
     width: 5px;
     height: 0%;
-    
     background: rgb(255,252,5);
     background: linear-gradient(180deg, rgba(255,252,5,1) 1%, rgba(14,135,245,1) 52%, rgba(44,255,0,1) 87%);
     animation-name:line1;
@@ -590,9 +623,8 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 }
 
 #section-video{
-
     min-height: 100vh;
-    margin-top: -25%;
+    margin-top: 50vh;
 }
 
 
@@ -649,27 +681,49 @@ section{
     position: absolute;
     font-size: 28pt;
 }
+
+/* VIDEO ************************ */
 #videoTItle{
-    color: white;
+    color: black;
     margin-left: 48%;
     margin-top: 5em;    
     font-size: 28pt;
     position: absolute;
 }
 #video{
-    color: white;
+    color: black;
     margin-left: 45%;
     font-size: 28pt;
 }
+.videoBox{
+    margin-left: 0em;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+.columnDescVideo{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 8em;
+}
+.descVideo{
+    text-align: left;
+
+}
 .image-pitch{
-    border-radius: 80px;
-    margin-left: 25%;
+    border-radius: 20px;
+    margin-left: 7.5em;
     margin-top: 0em;
-    width: 50%;
-    height: 20%;
+    width: 25em;
+    height: 15em;
     /* box-shadow: 10px 10px 10px purple; */
     animation: go-back 1s infinite alternate;
+    box-shadow: 1px 1px 10px black;
 }
+/* fim VIdeo */
 .inptForm{
     display: flex;
     flex-direction: column;
@@ -702,4 +756,13 @@ section{
     display: flex;
     flex-direction: row;
     
+}
+
+
+
+
+/* video */
+.titleVideo{
+    display: flex;
+    flex-direction: row;
 }

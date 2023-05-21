@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles/footerStyle.css"><!-- FOOTER -->
     <link rel="stylesheet" href="./styles/teamStyle.css"><!-- EQUIPE -->
     <link rel="stylesheet" href="./styles/servicosStyle.css"><!-- SERVICOS -->
+    <link rel="stylesheet" href="./styles/contatoStyle.css"><!-- CONTATO -->
+    <!-- <link rel="stylesheet" href="./styles/contatoStyle.css"> -->
     <link rel="icon" type="image/png" href="./img/logoZeroUm2.jpg"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Home</title>
@@ -60,7 +62,7 @@
                                     <div class="titleSobreNos">
                                         <div id="progressLineDefault">
                                             <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
-                                            <div class="VectorLine" ></div>
+                                            <div class="VectorLine"></div>
                                         </div>
                                         <h1 id="title1">Sobre Nós</h1>
                                 
@@ -78,11 +80,14 @@
                                     </div>
                                 </div>
                                 <div class="gifBox">
-                                    <img src="./img/gifs-de-programador-29.gif "id="image-sobrenos">
+                                    <img src="./img/gifs-de-programador-29.gif "id="image-sobrenos1">
                                 </div>
                             </div>
                         </div>
                      </section>
+
+
+                     
                      
                      
               
@@ -117,12 +122,16 @@
                    
                             <section class="projetoSection">
                                 <div class="contentProjetos">
-                                    <div class="titleProjetos">
+                                    <div class="">
                                         <div id="progressLineDefault1">
                                             <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-people">
-                                            <div id="scroll-progresso1" ></div>
+                                            <div id="scroll-progresso1">
+
+
+                                                
+                                            </div>
                                         </div>
-                                        <h1 id="title2">Nossos Projetos</h1>
+                                        <h1 id="title2">Projetos</h1>
                                     </div>
                                     
                                     <div class="slider">
@@ -159,13 +168,11 @@
                                             <label for="radio4" class="manual-btn"></label>
                                         </div>
                                     </div>
-                                    
+                                    <p class="descProjetos">
+                                        Nossos projetos inovadores combinam tecnologia e criatividade para criar soluções únicas e impactantes.<span style="color:orange"> Trabalhamos incansavelmente para transformar ideias em realidade, oferecendo resultados excepcionais para nossos clientes.</span>
+                                    </p>
                                 </div>
                             </section>
-
-
-
-
 
 
 
@@ -219,74 +226,102 @@
 
 
                      <!-- SERVIÇOS******************************************************************************************** -->
-                     <!-- <section  class="servicos">
-                        <div class="titleSections">
-                            <h1 class="init-hidden" id="servicos">Serviços</h1>
-                        </div>
-                        <div class="container-servicos">
-                            <div class="containerCard">
-                                <div class="card01">
-                                    <div class="lines"></div>
-                                    <div class="imgBx">
-                                        <img src="img/icons/html-css-javascript2.png">
+                     <section class="section-servicos">
+                         <div class="container-servicos">
+                                <div class="container-titulo-servicos">
+                                    <div id="progressLineDefault1">
+                                        <img src="./img/icons/toolsIcon.png" alt="icon-people" id="icon-people">
+                                    
                                     </div>
-                                    <div class="contentCard">
-                                        <div class="details">
-                                            <h2>Serviço Web</h2>
-                                            <p>Serviço para criação de Sites.</p>
-                                            <a href="#">Pedir Serviço</a>
+                                    <h1 id="title3">Serviços</h1>
+                                </div>
+
+                                <div class="desc-servicos">
+                                    <p id="text-servico">
+                                    
+                                        <span style="color:#00B2DF">Nós fornecemos serviços em tecnologia, incluindo desenvolvimento de aplicativos e integração de sistemas.</span>
+                                        Nossa equipe trabalha em estreita colaboração com nossos clientes para fornecer soluções personalizadas e eficientes.
+                                        </p>
+                                </div>
+
+                                <div class="containerCard">
+                                    <div class="card01">
+                                        <div class="lines"></div>
+                                        <div class="imgBx">
+                                            <img src="img/icons/html-css-javascript2.png">
+                                        </div>
+                                        <div class="contentCard">
+                                            <div class="details">
+                                                <h2>Serviço Web</h2>
+                                                <p>Serviço para criação de Sites.</p>
+                                                <a href="#">Pedir Serviço</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card01">
+                                        <div class="lines"></div>
+                                        <div class="imgBx">
+                                            <img src="img/icons/react2.png">
+                                        </div>
+                                        <div class="contentCard">
+                                            <div class="details">
+                                                <h2>Serviço Mobile</h2>
+                                                <p>Serviço para criação de App's.</p>
+                                                <a href="#">Pedir Serviço</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card01">
+                                        <div class="lines"></div>
+                                        <div class="imgBx">
+                                            <img src="img/icons/arduino.png">
+                                        </div>
+                                        <div class="contentCard">
+                                            <div class="details">
+                                                <h2>Serviço Robótico</h2>
+                                                <p>Serviço para criação de Maquinas.</p>
+                                                <a href="#">Pedir Serviço</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card01">
-                                    <div class="lines"></div>
-                                    <div class="imgBx">
-                                        <img src="img/icons/react2.png">
-                                    </div>
-                                    <div class="contentCard">
-                                        <div class="details">
-                                            <h2>Serviço Mobile</h2>
-                                            <p>Serviço para criação de App's.</p>
-                                            <a href="#">Pedir Serviço</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card01">
-                                    <div class="lines"></div>
-                                    <div class="imgBx">
-                                        <img src="img/icons/arduino.png">
-                                    </div>
-                                    <div class="contentCard">
-                                        <div class="details">
-                                            <h2>Serviço Robótico</h2>
-                                            <p>Serviço para criação de Maquinas.</p>
-                                            <a href="#">Pedir Serviço</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="desc-servicos">
-                            <p id="text-servico">
-                            
-                                Nós fornecemos serviços em tecnologia, incluindo desenvolvimento de aplicativos e integração de sistemas.
-                                Nossa equipe trabalha em estreita colaboração com nossos clientes para fornecer soluções personalizadas e eficientes.
-                                </p>
-                        </div>
-                     </section>                    
+                         </div>
+                        </section>
+
+
                   
 
-                     
-                     <section class="init-hidden" id="section-video" >
-                        <h1 id="video">Vídeo</h1>
-                        <img class="image-pitch" src="img/image-pitch.jpg" alt="imagem test">
+                    
+                     <section id="section-video" >
+                       <div class="videoBox">
+                            <div class="videoColumn">
+                                <div class="titleVideo">
+                                    <div class="progresso2">
+                                        <div id="scroll-progresso2"></div>
+                                        <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
+                                   </div>
+                                   <h1 id="videoTitle">Vídeo</h1>
+                                </div>
+                                <img class="image-pitch" src="img/image-pitch.jpg" alt="imagem test">
+                            </div>
+                            <div class="columnDescVideo">
+                                <h3>Melhorando mundo através de códigos:</h3>
+                                <p class="descVideo">
+                                    Assista uma breve   <span style="color:green"> apresentação de um dos nossos projetos em andamento.</span>
+                                </p>
+                            </div>
+                       </div>
                      </section>
 
                    
                         
                      <section class="init-hidden" id="equipe-section">
                         <div id="tittleEquipe1">
-                            <h1 class="sectionTextLeft" id="equipe">Integrantes da equipe</h1>
+                            <div class="progresso3">
+                                <div id="scroll-progresso3"></div>
+                                <img src="./img/icons/teamIcon.png" alt="icon-team" id="icon-team">
+                           </div> 
+                            <h1 id="equipe">Integrantes da equipe</h1>
                         </div>
                         
                         <div class="container-equipe">
@@ -453,7 +488,172 @@
                          </div>
                      </section>
 
-                     </section>
+
+                                  
+                     <section class="section-contato">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>           
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+            
+                        <div class="imgBox" id="logoFooter">
+                            <img src="img/Nova ZeroUm Border Black.png" id="image-sobrenos">
+                        </div>
+                        <div class="signin">
+                            <div class="content4">
+                                <h2>Comentar</h2>
+                                <div class="form">
+                                    <div class="inputBx">
+                                        <input type="text" required>
+                                        <i>Nome de usuário</i>
+                                    </div>
+                                    <div class="inputBx">
+                                        <input type="email" required>
+                                        <i>Email</i>
+                                    </div>
+                                    <div class="inputBx">
+                                        <input type="text" required>
+                                        <i>Comentário</i>
+                                    </div>
+                                    <div class="verify" style="margin-left:-4em">
+                                         <div id="robot-test"class="g-recaptcha" data-sitekey="6Lee6-AlAAAAABy1fP2gezouCx-IMqFXUEdObEy6"></div>
+                                    </div>
+                                    <div class="inputBx">
+                                        <input type="submit" value="Enviar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+
+
+
+
+                     <!-- </section>
                      <section class="init-hidden" id="section-contato">
                         <div class="boxIconChat">
                             <div id="contatoTittle">
@@ -474,7 +674,7 @@
                             </div>
                            
                         </div>
-                     </section>
+                     </section>-->
 
                      <section class="parceiros">
                         <div class="textParceiro">
@@ -486,7 +686,7 @@
                                 <a href="#"><img class="parceiro2"src="./img/logoAlpha.png" alt="logoAlpha"></a>
                             </div>
                         </div>
-                    </section> -->
+                    </section>  
 
                      <!-- <div tabindex="0"class="content" id="content" onclick="disbleSidebar()">
                          <h1>funfa</h1>
@@ -496,8 +696,10 @@
                              <line  class="barRgb"x1="0" y1="0" x2="0" y2="800" style="stroke:rgb(255,0,0);stroke-width:7" />
      
                            </svg> 
-                     </div> -->
-                <!-- </div>
+                     </div> 
+
+                </div>-->
+
             </main>
             <hr class="linha2">
             <footer>
@@ -522,7 +724,7 @@
                     <div class="footerBottom">
                         <p>Copyright &copy;2023; Designer by <span class="designer">Save Br</span></p>
                     </div>
-            </footer> -->
+            </footer>
         </div>
     </body>
     <script src="./javaScript/index.js">
