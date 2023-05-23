@@ -1,5 +1,6 @@
 footer{
-    background-color: #111;
+    background-color: #031326;
+    margin-top: 10em;
 }
 .footerContainer{
     width: 100%;
@@ -14,15 +15,15 @@ footer{
     padding: 10px;
     background-color: #fff;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 .socialIcons2 a i{
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
     opacity: 0.9;
 }
 .socialIcons2 a:hover{
-    background-color: #111;
+    background-color: #383e47;
     transition: 0.5s;
 }
 .socialIcons2 a:hover i{
@@ -49,7 +50,7 @@ footer{
     opacity: 1;
 }
 .footerBottom{
-    background-color: #000;
+    background-color: #031326;
     padding: 20px;
     text-align: center;
     max-width: 100%;    
@@ -77,14 +78,13 @@ footer{
 }
 
 #logoFooter{
-    margin-bottom: -140px;
-
+    width: 450px;
     transform: translateY(0px);
     animation: float 5s ease-in-out infinite ;
     }
 #logoFooter{
-    margin-top: 30px;
- 
+    position: absolute;
+    margin-top: 5em;
     transform: translateY(0px);
     animation: float 5s ease-in-out infinite ;
 }

@@ -1,6 +1,14 @@
 #equipe{
     font-size: 28pt;
-    margin-left: 4em;
+    margin-left: 4.5em;
+}
+
+
+#text-servico{
+    text-align: left;
+    font-size: 24pt;
+    margin-left: 43.5%;
+    margin-top: 3em;
 }
 
 /* Cards equipe */
@@ -23,21 +31,21 @@
 .socialIcons a{
     text-decoration: none;
     padding: 10px;
-    background-color: #000000;
+    background-color: white;
     margin: 10px;
     border-radius: 80%;
 }
 .socialIcons a i{
-    font-size: 2em;
-    color: rgb(115, 171, 189);
+    font-size: 1.5em;
+    color: black;
     opacity: 0.9;
 }
 .socialIcons a:hover{
-    background-color: #111;
+    background-color: #003140;
     transition: 0.5s;
 }
 .socialIcons a:hover i{
-    color: #5fe1e6;
+    color: white;
     transition: 0.5s;
 }
 
@@ -90,7 +98,7 @@
     content: '';
     position: absolute;
     inset: 3px;
-    background: #292929;
+    background: #031326;
 }
 .card .imgBx{
     position: absolute;
@@ -162,7 +170,7 @@
 }
 .card .content .details h2{
     font-size: 1.5em;
-    color: #45f3ff;
+    color: white;
     line-height: 1.2em;
 }
 .card:hover .content .details p{

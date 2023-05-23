@@ -82,44 +82,67 @@ function indicaProgresso() {
 
     var rolagem=(scroll/altura)*100;
     
-    
-    // if(rolagem>10){
-    //     document.getElementById("scroll-progresso").style.animationName='line1';
-    //     document.getElementById("icon-mala").style.opacity='1';
-    // }else{
-    //     document.getElementById("scroll-progresso").style.animationName='line2';
-    //     document.getElementById("icon-mala").style.opacity='0'; 
+    if(rolagem>10){
+        document.getElementById("logoFooterFixed").style.marginTop='1.5em';
+        document.getElementById("nav_header").style.marginTop='2em';
+        document.getElementById("header").style.position='fixed';
+        document.getElementById("header").style.backgroundColor='#003140';
+        document.getElementById("header").style.marginTop='-1em';
+        document.getElementById("header").style.width='100%';
+        document.getElementById("header").style.height='7em';
+        document.getElementById("header").style.zIndex='999';
+        document.getElementById("header").style.boxShadow='1px 1px 10px black';
+       
+
+    }else{
+        document.getElementById("header").style.position='';
+        document.getElementById("logoFooterFixed").style.marginTop='';
+        document.getElementById("nav_header").style.marginTop='';
+        document.getElementById("header").style.position='';
+        document.getElementById("header").style.backgroundColor='';
+        document.getElementById("header").style.marginTop='';
+        document.getElementById("header").style.width='';
+        document.getElementById("header").style.height='';
+        document.getElementById("header").style.zIndex='';
+        document.getElementById("header").style.boxShadow='';
+    }
+    //  if(rolagem>10){
+    //      document.getElementById("scroll-progresso1").style.animationName='line1';
+    //      document.getElementById("icon-mala").style.opacity='1';
+    //  }else{
+    //      document.getElementById("scroll-progresso1").style.animationName='line2';
+    //      document.getElementById("icon-mala").style.opacity='0'; 
     // }
 
-    // if(rolagem>20){
-    //     document.getElementById("scroll-progresso1").style.animationName='line1';
-    //     document.getElementById("icon-tool").style.opacity='1'; 
-    // }else{
-    //     document.getElementById("scroll-progresso1").style.animationName='line2';
-    //     document.getElementById("icon-tool").style.opacity='0'; 
-    // }
+    //  if(rolagem>20){
+    //      document.getElementById("scroll-progresso01").style.animationName='line1';
+    //      document.getElementById("icon-tool").style.opacity='1'; 
+    //  }else{
+    //      document.getElementById("scroll-progresso01").style.animationName='line2';
+    //      document.getElementById("icon-tool").style.opacity='0'; 
+    //  }
 
-    // if(rolagem>30){
-    //     document.getElementById("scroll-progresso2").style.animationName='line1';
-    //     document.getElementById("icon-video").style.opacity='1'; 
-    // }else{
-    //     document.getElementById("scroll-progresso2").style.animationName='line2';
-    //     document.getElementById("icon-video").style.opacity='0'; 
-    // }
-    //   if(rolagem>40){
-    //     document.getElementById("scroll-progresso3").style.animationName='line1';
-    //     document.getElementById("icon-team").style.opacity='1'; 
-    // }else{
-    //     document.getElementById("scroll-progresso3").style.animationName='line2';
-    //     document.getElementById("icon-team").style.opacity='0'; 
-    // }
-    // console.log(10*rolagem+"%");
+     if(rolagem>10){
+         document.getElementById("scroll-progresso2").style.animationName='line5';
+         document.getElementById("icon-video").style.opacity='1'; 
+     }else{
+         document.getElementById("scroll-progresso2").style.animationName='line2';
+         document.getElementById("icon-video").style.opacity='0'; 
+     }
+       if(rolagem>40){
+         document.getElementById("scroll-progresso3").style.animationName='line1';
+         document.getElementById("icon-team").style.opacity='1'; 
+     }else{
+         document.getElementById("scroll-progresso3").style.animationName='line2';
+         document.getElementById("icon-team").style.opacity='0'; 
+     }
+     console.log(10*rolagem+"%");
 
-     // if(rolagem>50){
-    //     document.getElementById("scroll-progresso").style.width=50+"%";
-    // }else{
-    //     document.getElementById("scroll-progresso").style.width=40+"%";
-    // }
+      if(rolagem>50){
+         document.getElementById("scroll-progresso").style.width=50+"%";
+     }else{
+        document.getElementById("scroll-progresso").style.width=40+"%";
+     }
 }
 
 window.onscroll=function(){
