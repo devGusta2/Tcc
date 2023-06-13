@@ -23,7 +23,7 @@ footer{
     opacity: 0.9;
 }
 .socialIcons2 a:hover{
-    background-color: #383e47;
+    background-color: #003140;
     transition: 0.5s;
 }
 .socialIcons2 a:hover i{
@@ -42,7 +42,7 @@ footer{
     color: #fff;
     margin: 20px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     opacity: 0.7;
     transition: 0.5s;
 }

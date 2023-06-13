@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=wght@300;400;500;700&display=swap");
+
+:root{
+  --bg-cards: #ebebeb;
+}
+
+.containerSobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.cardSobre {
+  position: relative;
+  width: 300px;
+  height:300px;
+  margin: 30px;
+  background: var(--bg-cards);
+  align-items: center;
+  text-align: left;
+  box-shadow: 3px 3px 10px black;
+}
+.iconSobre{
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 225px;
+  bottom: 215px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.iconSobre2{
+  content: "";
+  position: absolute;
+  width:120px;
+  height: 60px;
+  right: 225px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: 280px;
+}
+.columnCardContainer{
+  display: flex;
+  flex-direction: column;
+}
+.columCardSobreNos{
+  display: flex;
+  flex-direction: column;
+}
+.rowCardsSb{
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+ card 2
+
+*/
+.cardSobre1 {
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 660px;
+  height:350px;
+  margin: 30px;
+  background: var(--bg-cards);
+  align-items: center;
+  text-align: left;
+  gap: 3em;
+}
+.iconSobre3{
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 60px;
+  left: 580px;
+  bottom: 270px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.iconSobre4{
+  content: "";
+  position: absolute;
+  width:120px;
+  height: 60px;
+  right: 590px;
+ 
+  transform: rotate(45deg);
+  top: 280px;
+
+}
+
+.descCardSb{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22pt;
+  position: relative;
+  z-index: 55;
+  margin-left: 2em;
+ 
+}
+.descCardSb1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22pt;
+  position: relative;
+  z-index: 55;
+  margin-top: 5em;
+  margin-left: 1em;
+}
+
+.imgCardSb{
+  height: 10em;
+  width: 10em;
+  background-size: 10em;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px #F5F5F5;
+}
+
+.imgCardSb{
+  margin: auto;
+}
+
+.columCardSobreNos1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5.2em;
+}

@@ -1,9 +1,58 @@
+.imgLogo{
+    height:5em;
+    width: 18em;
+    margin-top: -0.5em;
+}
+
+.breakLine{
+    display: flex;
+    flex-direction: row;
+    background-color: #003140;
+}
+#linha1{
+    margin-top: 1em;
+    box-shadow: 1px 1px 400px white;
+    position: absolute;
+    margin-top: 3em;
+    width: 20em;
+    z-index: 1;
+    border: 2px solid white;
+    
+    
+}
+
+#linha2{
+
+    box-shadow: 1px 1px 400px white;
+    position: absolute;
+    margin-top: 34.5px;
+    border: 2px solid white;
+    margin-left: 19.8em;
+    width: 5em;
+    transform: rotate(160deg);
+    z-index: 1;
+}
+
+#linha3{
+    margin-top: 1em;
+    box-shadow: 1px 1px 400px white;
+    position: absolute;
+    margin-top: 21.0px;
+    width: 78%;
+    z-index: 1;
+    margin-left: 24.6em;
+    border: 2px solid white;
+    overflow: hidden;
+    
+}
+
 .header{
     display: flex;
     flex-direction: row;
     padding-top: 1em;
     position: relative;
     z-index: 999;
+    background-color: #003140;
 }
 .header,a{
     text-decoration: none;
@@ -39,7 +88,7 @@
 }
     
 .logoHeader{
-    margin-left: 3em;
+    margin-left: 2em;
 }
 .nav_header a{
     margin-right: 3em;

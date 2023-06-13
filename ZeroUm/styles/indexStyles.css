@@ -15,8 +15,16 @@
 :root{
     --azul--color:#003140;
 }
-
-
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
 .parceiro1{
@@ -110,11 +118,7 @@ body{
 }    
 
 
-.imgLogo{
-    height:2em;
-    width: 5em;
-    margin-top: -0.5em;
-}
+
 
 .logoBody{
     position: relative;
@@ -146,13 +150,6 @@ body{
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(0,0,0,1) 87%);
   
 }
-#linha1{
-    margin-top: 1em;
-    box-shadow: 1px 1px 400px white;
-    position: relative;
-    z-index: 1;
-    
-}
 
 
 .linhaColorida{
@@ -179,11 +176,17 @@ body{
     margin-top: 2.5em;
 }
 /* ICONS************************************************************************************************ */
+.decoracaoIcon{
+    margin-top: -50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 #icon-people{
-    height: 6em;
-    width: 6em;
-    margin-top: 320px;
-    margin-left: -45px;
+    height: 5.5em;
+    width: 5.5em;
 }
 #icon-mala{
     height: 6em;
@@ -236,7 +239,7 @@ body{
     margin-left: 0%;
     margin-top: -4%;
     font-size: 22pt;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 #title1{
@@ -256,9 +259,8 @@ body{
     display: flex;
     flex-direction: row;
     gap: 9%;
-    margin-top: -15%;
-    background-color: #003140;
-    color: white;
+    margin-top: 5%;
+    color: black;
   
 }
 .contentSobreNos{
@@ -646,6 +648,7 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 #scroll-progresso3{
     position: absolute;
     width: 3px;
+
     height: 80%;
     background: rgb(255,252,5);
     background: linear-gradient(180deg, rgba(255,252,5,1) 1%, rgba(14,135,245,1) 52%, rgba(44,255,0,1) 87%);
@@ -679,7 +682,7 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 #scroll-progresso4{
     position: absolute;
     width: 3px;
-    height: 150%;
+    height: 145%;
     background: rgb(0,255,16);
     background: linear-gradient(180deg, rgba(0,255,16,1) 5%, rgba(46,230,245,1) 37%, rgba(2,106,137,1) 71%);
     animation-name:line1;
@@ -692,7 +695,7 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
     /* animation-play-state: paused; */
    
 }
-#scroll-progresso5{
+/* #scroll-progresso5{
     position: absolute;
     width: 3px;
     height: 100%;
@@ -705,13 +708,13 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
     z-index: 1;
     margin-left: 7.8em;
     margin-top: 0em;
-    /* animation-play-state: paused; */
    
-}
+   
+} */
 
 #icon-parceria{
     height: 12em;
-    width: 10em;
+    width: 11.5em;
     margin-top: -8em;
     margin-left: -18em;
 }
@@ -902,4 +905,174 @@ section{
 .titleVideo{
     display: flex;
     flex-direction: row;
+}
+
+.inicio{
+    background-color: #003140;
+    margin-top: -15em;
+    
+}
+.linhas-inicio{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+.linha-inicio-1{
+   height: 3em;
+    background-color: #003140;
+    border: 1px solid  #003140;
+    position: absolute;
+    height: 5em;
+    transform: rotate(200deg);
+    width: 20em;
+    margin-left: 500px;
+    margin-top:-72px;
+}
+.linha-inicio-2{
+    position: relative;
+    background-color: #003140;
+    border: 1px solid  #003140;
+    width: 100%;
+    margin-left: 49.8em;
+    margin-top: -19px;
+    height: 5em;
+    overflow: hidden;
+}
+
+.columnInicioButton{
+    font-size: 20pt;
+    margin-top: 7%;
+}
+
+.rowInicio{
+    margin-top: 25%;
+    position: absolute;
+    margin-left: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50em;
+}
+
+#text-inicio{
+    font-size: 27pt;
+    color: white;
+    text-align: center;
+    font-family: 'logoFont','Times','serif';
+    font-family: 'abnes', sans-serif;
+}
+
+#ver-mais{
+    background-color: #41B8C4;
+    border-radius: 10px;
+    width: 7em;
+    height: 1.5em;
+    margin: auto;
+    color: white;
+    box-shadow: 1px 1px black;
+    text-align: center;
+    
+}
+
+
+#ver-mais:hover{
+    transition: 0.5s;
+    background-color: #5cc3cd;
+    color: #003140;
+}
+#ver-mais:not(:hover){
+    transition: 0.5s;
+    background-color: #41B8C4;
+    
+}
+.columnInicioButton{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#art-inicio{
+    height: 25em;
+    width: 35em;
+    margin-top: 2.5em;
+    position: relative;
+    z-index: 555;
+    margin-left: -22em;
+    object-fit: cover;
+}
+/* margintop -75px */
+
+/* 39 49 */
+:root{
+    --bg-cards: #ebebeb;
+}
+
+.containerProjetos{
+    display: flex;
+    flex-direction: row;
+}
+.rowCardsProjeto{
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+.cardProjetos{
+    height: 30em;
+    width: 24em;
+    background-color: var(--bg-cards);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 15px black;
+}
+.colmnCardProjeto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#sectionProjetos{
+    margin-top: 20%;
+}
+#imgProjetos{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+}
+
+.subRowCard{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-left: 1em;
+}
+
+#subImageCard{
+    height: 7em;
+    width: 7em;
+    border-radius: 10px;
+}
+
+.buttonCardProjet{
+    background-color: #003140;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    height: 4em;
+    outline: 0;
+    border: none;
+}
+.buttonCardProjet:hover{
+    transition: 0.5s;
+    background-color: #41B8C4;
+    color: white;
+
+}
+#titleSection{
+    font-size: 22pt;
 }

@@ -13,51 +13,125 @@
     <link rel="stylesheet" href="./styles/teamStyle.css"><!-- EQUIPE -->
     <link rel="stylesheet" href="./styles/servicosStyle.css"><!-- SERVICOS -->
     <link rel="stylesheet" href="./styles/contatoStyle.css"><!-- CONTATO -->
+    <link rel="stylesheet" href="./styles/cardTcc.css"><!-- CARD DO SOBRE NÓS -->
     <!-- <link rel="stylesheet" href="./styles/contatoStyle.css"> -->
     <link rel="icon" type="image/png" href="./img/logoZeroUm2.jpg"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Home</title>
 </head>
     <body>
-        <div class="container">
-            <!--Header -->
-            <header class="header" id="header">
-                <button onclick="toggleSidebar()"class="btn_menu_header" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <header class="header" id="header">
+            <button onclick="toggleSidebar()"class="btn_menu_header" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+
+            <div class="logoHeader">
+                <a href="index.html">
+                    <img src="./img/logoZeroUmFinal.png" alt="logo" style="height:'1px'"class="imgLogo" id="logoHeaderImg">
+                </a>
+                
+            </div>
+            <div class="nav_header" id="nav_header">
+                <button onclick="disbleSidebar()" class="btn_menu_header" id="btnMenuHeader" > 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                       </svg>
                 </button>
-                <div class="logoHeader">
-                    <a href="index.html">
-                        <img src="./img/ZeroUmDEFINITIVO.png" alt="logo" class="imgLogo" id="logoFooterFixed">
-                    </a>
-                </div>
-                <div class="nav_header" id="nav_header">
-                    <button onclick="disbleSidebar()" class="btn_menu_header" id="btnMenuHeader" > 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                    </button>
-                    <a class="cabecalho_link" href="#home" id="idioma-title-sobreNos">Sobre Nós</a>
-                    <a class="cabecalho_link" href="#equipe-ancora" id="idioma-title-Equipe">Equipe</a>
-                    <a class="cabecalho_link" href="#projetos-ancora" id="idioma-title-Projeto">Projetos</a>
-                    <a class="cabecalho_link" href="#video-ancora" id="idioma-title-Video">Vídeo</a>
-                    <a class="cabecalho_link" href="#contato-ancora" id="idioma-title-Contato">Contato</a>
-                </div>
-            </header>
-
-            <hr id="linha1">
+                <a class="cabecalho_link" href="#home" id="idioma-title-sobreNos">Sobre Nós</a>
+                <a class="cabecalho_link" href="#equipe-ancora" id="idioma-title-Equipe">Equipe</a>
+                <a class="cabecalho_link" href="#projetos-ancora" id="idioma-title-Projeto">Projetos</a>
+                <a class="cabecalho_link" href="#video-ancora" id="idioma-title-Video">Vídeo</a>
+                <a class="cabecalho_link" href="#contato-ancora" id="idioma-title-Contato">Contato</a>
+            </div>
             
+        </header>
+        <div class="breakLine">
+            <hr id="linha1">
+            <hr id="linha2">
+            <hr id="linha3">
+        </div>
+        <div class="container">
+            <section class="inicio">
+                <div class="rowInicio">
+                    <div class="columnInicioButton">
+                        <p id="text-inicio">Linkando você<br>ao futuro!</p>
+                        <div id="ver-mais">
+                            <p >Ver Mais</p>
+                        </div>
+                    </div>
+                    <div class="imageInicio">
+                        <img src="./img/art-inicio.png" alt="art-inicio" id="art-inicio">
+                    </div>
+                </div>
+            </section>
+            <div class="linhas-inicio">
+                <div class="linha-inicio-1"></div>
+                <div class="linha-inicio-2"></div>
+            </div>
             <!--Principal -->
             <main class="mainContent">
-                <div class="contentBodyMain">
-                    <div class="logoBodyBox">
-                        <!-- <img src="./img/logoZeroUmok.png" alt="logo" class="logoBody"> -->
-                     </div>
+            
+                    <!-- <div class="logoBodyBox">
+                         <img src="./img/logoZeroUmok.png" alt="logo" class="logoBody"> 
+                     </div> -->
 
+                  
+
+
+                   
                      <section class="sobreNos">
-                            <div class="contentSobreNos">
-                            <!-- LINHA COLORIDA -->
+                            <div class="containerSobre">
+
+                                <div class="decoracaoIcon">
+                                    <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
+                                    <h1 id="titleSection">Sobre Nós</h1>
+                                </div>
+
+                                <div class="columCardSobreNos1">
+                                    <p class="descCardSb1">A zero um é uma empresa de desenvolvimento<br> de softwares que busca trazer soluções com <br>criatividade e eficiência para seus clientes, sempre<br>trazendo inovações coms segurança.</p>
+                                    <div class="cardSobre1">
+                                        <div class="imgCardSb" style="margin-top:2em">
+                                            <img src="./img/icons/predio.png" alt="produtividade-icon" class="imgCardSb">
+                                        </div>
+                                        <p class="descCardSb" style="margin-top: 8em; position: absolute;">Desenvolvimento de softwares para empresas de pequeno e médio porte.</p>
+                                        <div class="iconSobre3"></div>
+                                        <div class="iconSobre4"></div>
+                                    </div>
+                                </div>
+                                <div class="columCardSobreNos">
+                                <div class="rowCardsSb">
+                                        <div class="cardSobre">
+                                            <div class="imgCardSb">
+                                                <img src="./img/icons/produtividadeIcon.png" alt="produtividade-icon" class="imgCardSb">
+                                            </div>
+                                            <p class="descCardSb">Focamos em produtividade constante</p>
+                                            <div class="iconSobre"></div>
+                                            <div class="iconSobre2"></div>
+                                        </div>
+                                        <div class="cardSobre">
+                                            <div class="imgCardSb">
+                                                <img src="./img/icons/confianca.png" alt="confiança-icon" class="imgCardSb">
+                                            </div>
+                                            <p class="descCardSb" >Confiamos em nossos colaboradores e clientes</p>
+                                            <div class="iconSobre"></div>
+                                            <div class="iconSobre2"></div>
+                                        </div>
+                                </div>
+                                    <div class="cardSobre1">
+                                        <div class="imgCardSb"style="margin-top:2em">
+                                            <img src="./img/icons/ideia.png" alt="produtividade-icon" class="imgCardSb" >
+                                        </div>
+                                        <p class="descCardSb" style="margin-top: 8em; position: absolute;">Novas ideias com criatividade, inovaçãoe segurança.</p>
+                                        <div class="iconSobre3"></div>
+                                        <div class="iconSobre4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- <div class="contentSobreNos">
+                                LINHA COLORIDA
                                 <div class="textEtitle">
                                     <div class="titleSobreNos">
                                         <div id="progressLineDefault">
@@ -66,29 +140,80 @@
                                         </div>
                                         <p id="home"> </p>
                                         <h1 id="title1">Sobre Nós</h1>
-                                        
-                                    </div>
-                                    <div class="textSobreNos">
-                                        <p class="descSobreNos">
-                                        
-                                            Na nossa empresa, somos apaixonados por tecnologia e inovação.
-                                            Desde a nossa fundação, buscamos sempre
-                                            estar na vanguarda da transformação digital, desenvolvendo
-                                            soluções criativas e eficientes para os desafios de negócios
-                                            dos nossos clientes.
-                                            </p>
-                                            <br>
-                                            <br>
                                     </div>
                                 </div>
-                                <div class="gifBox">
-                                    <img src="./img/gifs-de-programador-29.gif "id="image-sobrenos">
+                            </div>
+                        </div> -->
+                    </section>
+                    
+                    <Section id="sectionProjetos">
+                        <div class="containerProjetos">
+                            <div class="decoracaoIcon">
+                                <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-people">
+                                <h1 id="titleSection">Projetos</h1>
+                            </div>
+                            <div class="rowCardsProjeto">
+                                <div class="cardProjetos">
+                                    <div class="colmnCardProjeto">
+                                        <img src="./img/projetos/aduinoProjeto.jpg" alt="foto-projeto-arduíno" id="imgProjetos">
+                                        <h2>Arduíno</h2>
+                                        <div class="subRowCard">
+                                            <img src="./img/icons/arduino.jpg" alt="icon-arduino" id="subImageCard">
+                                            <p style="font-size: 22pt;">Projetos em Arduíno</p>
+                                        </div>
+                                        <button class="buttonCardProjet">
+                                            <h3 id="buttonTitle">Saiba Mais</h3>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardProjetos">
+                                    <div class="colmnCardProjeto">
+                                        <img src="./img/projetos/apps.png" alt="foto-projeto-arduíno" id="imgProjetos">
+                                        <h2>Apps</h2>
+                                        <div class="subRowCard">
+                                            <img src="./img/icons/celular.png" alt="icon-arduino" id="subImageCard">
+                                            <p style="font-size: 22pt;">Projetos em Arduíno</p>
+                                        </div>
+                                        <button class="buttonCardProjet">
+                                            <h3 id="buttonTitle">Saiba Mais</h3>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardProjetos">
+                                    <div class="colmnCardProjeto">
+                                        <img src="./img/projetos/website.png" alt="foto-projeto-arduíno" id="imgProjetos">
+                                        <h2>Web Sites</h2>
+                                        <div class="subRowCard">
+                                            <img src="./img/icons/taghtml.png" alt="icon-arduino" id="subImageCard">
+                                            <p style="font-size: 22pt;">Projetos em Arduíno</p>
+                                        </div>
+                                        <button class="buttonCardProjet">
+                                            <h3 id="buttonTitle">Saiba Mais</h3>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                     </section>
+                    </Section>
 
 
+
+
+
+
+
+
+
+        </div>
+            <!--Header -->
+          
+
+                       
+                     
+                
+                   
+                   
+                    
                      
                      
                      
@@ -120,9 +245,9 @@
            </div> -->
            
                
-            </div>
+            
                    
-                            <section class="projetoSection" id="projetos-ancora">
+                            <!-- <section class="projetoSection" id="projetos-ancora">
                                 <div class="contentProjetos">
                                     <div class="">
                                         <div id="progressLineDefault1">
@@ -174,10 +299,10 @@
                                         Nossos projetos inovadores combinam tecnologia e criatividade para criar soluções únicas e impactantes.<span style="color:orange"> Trabalhamos incansavelmente para transformar ideias em realidade, oferecendo resultados excepcionais para nossos clientes.</span>
                                     </p>
                                 </div>
-                            </section>
+                            </section> -->
 
                      <!-- SERVIÇOS******************************************************************************************** -->
-                     <section class="section-servicos" id="servicos-ancora">
+                     <!-- <section class="section-servicos" id="servicos-ancora">
 
                          <div class="container-servicos">
                                 <div class="container-titulo-servicos">
@@ -241,22 +366,23 @@
                                 </div>
                          </div>
                         </section>
-
+ -->
 
                   
 
                     
-                     <section id="section-video" >
+                     <!-- <section id="section-video" >
                        <div class="videoBox" id="video-ancora">
                             <div class="videoColumn">
                                 <div class="titleVideo">
                                     
                                         <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
+                                        
                                         <div id="scroll-progresso3"></div>
                                    
                                    <h1 id="videoTitle">Vídeo</h1>
                                 </div>
-                                <img class="image-pitch" src="img/image-pitch.jpg" alt="imagem test">
+                                <video src="./Video/VID-20230523-WA0008.mp4" controls class="image-pitch" type="video/mp4"></video>
                             </div>
                             <div class="columnDescVideo">
                                 <h3>Melhorando mundo através de códigos:</h3>
@@ -265,11 +391,11 @@
                                 </p>
                             </div>
                        </div>
-                     </section>
+                     </section> -->
 
                    
                         
-                     <section class="init-hidden" id="equipe-section">
+                     <!-- <section class="init-hidden" id="equipe-section">
                         <div id="tittleEquipe1">
                             <div id="equipe-ancora">
                                 
@@ -448,18 +574,18 @@
                                 </div>
                             </div>
                          </div>
-                     </section>
+                     </section> -->
 
 
                                   
-                     <section class="section-contato" id="contato-ancora">
-                       <div class="titleAndIcon">
+                     <!-- <section class="section-contato" id="contato-ancora">
+                        <div class="titleAndIcon">
                             <div class="rowContact">
                                 <img src="./img/icons/tel-icon.png" alt="icon-team" id="icon-tel">
                                 <h1 id="title-contact">Contato</h1>
                             </div>
                             <div id="scroll-progresso5"></div>
-                       </div>
+                       </div> 
                         <span></span>
                         <span></span>
                         <span></span>
@@ -618,7 +744,7 @@
                             </div>
                         </div>
                     </section> 
-
+ -->
 
 
 
@@ -645,7 +771,7 @@
                         </div>
                      </section>-->
 
-                     <section class="parceiros">
+                     <!-- <section class="parceiros">
                         <div class="textParceiro">
                             <img src="./img/icons/iconEmpresas.png" alt="icon-parceria" id="icon-parceria">
                             <h2 id="titleEmpresas">Empresas que já contam com a gente</h2>
@@ -659,7 +785,7 @@
                                 <img src="./img/icons/iconEmpresas.png" alt="icon-parceria" id="icon-empresasImg">
                             </div>
                         </div>
-                    </section>  
+                    </section>   -->
 
                      <!-- <div tabindex="0"class="content" id="content" onclick="disbleSidebar()">
                          <h1>funfa</h1>
@@ -674,7 +800,8 @@
                 </div>-->
 
             </main>
-            <footer>
+
+            <!-- <footer>
                 <div class="logoFooter">
                     <img  src="./img/Nova ZeroUm Border Black.png" style="height: 100px; margin-top: 100px;"  id="logoFooter">
                     <div class="footerContainer">
@@ -698,8 +825,8 @@
                     <div class="footerBottom">
                         <p>Copyright &copy;2023; Designer by <span class="designer">Save Br</span></p>
                     </div>
-            </footer>
-        </div>
+            </footer> -->
+        
     </body>
     <script src="./javaScript/index.js">
     </script>
