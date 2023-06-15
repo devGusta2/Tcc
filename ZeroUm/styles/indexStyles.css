@@ -911,6 +911,7 @@ section{
     background-color: #003140;
     margin-top: -15em;
     
+    box-shadow: -5px 12px 10px 1px black;
 }
 .linhas-inicio{
     display: flex;
@@ -924,10 +925,12 @@ section{
     border: 1px solid  #003140;
     position: absolute;
     height: 5em;
-    transform: rotate(200deg);
-    width: 20em;
-    margin-left: 500px;
-    margin-top:-72px;
+    transform: rotate(203deg);
+    width: 10em;
+    margin-left: 659px;
+    margin-top:-48px;
+    box-shadow: -17px -11px 12px 0px black;
+    
 }
 .linha-inicio-2{
     position: relative;
@@ -937,7 +940,7 @@ section{
     margin-left: 49.8em;
     margin-top: -19px;
     height: 5em;
-    overflow: hidden;
+    box-shadow: 11px 13px 10px 1px black;
 }
 
 .columnInicioButton{
@@ -961,6 +964,7 @@ section{
     text-align: center;
     font-family: 'logoFont','Times','serif';
     font-family: 'abnes', sans-serif;
+    /* text-shadow: 10px 10px 10px #1ba5b1; */
 }
 
 #ver-mais{
@@ -972,6 +976,7 @@ section{
     color: white;
     box-shadow: 1px 1px black;
     text-align: center;
+    
     
 }
 
@@ -991,15 +996,19 @@ section{
     flex-direction: column;
     gap: 2em;
 }
-
-#art-inicio{
-    height: 25em;
-    width: 35em;
-    margin-top: 2.5em;
+.imageInicio{
     position: relative;
-    z-index: 555;
-    margin-left: -22em;
+}
+#art-inicio{
+    height: 40em;
+    width: 45em;
+    margin-top: -35.1em;
+    position: relative;
+    z-index: 999;
+    margin-left: 2.5%;
     object-fit: cover;
+    overflow: hidden;
+
 }
 /* margintop -75px */
 
@@ -1027,6 +1036,22 @@ section{
     text-align: center;
     box-shadow: 0px 5px 15px black;
 }
+.cardProjetos:hover{
+    animation: ease-in-out;
+    transition: 0.5s;
+    transform:scale(1.05);
+    box-shadow: 0px 5px 30px black;
+}
+
+.cardProjetos:not(:hover){
+    animation: ease-in-out;
+    transition: 0.5s;
+    transform:scale(1);
+    box-shadow: 0px 5px 30px black;
+}
+
+
+
 .colmnCardProjeto{
     display: flex;
     flex-direction: column;
@@ -1075,4 +1100,26 @@ section{
 }
 #titleSection{
     font-size: 22pt;
+}
+
+
+.sectionProjetosAndamento{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(40,40,40,1) 43%, rgba(60,60,60,1) 85%);
+    width: 100%;
+    height: 75vh;
+}
+
+.titleSectionPrjtAnd{
+    color: white;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.columnDesc{
+    color: white;
+    font-size: 22pt;
+    display: flex;
+    flex-direction: column;
+    gap:3em;
 }

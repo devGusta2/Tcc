@@ -36,9 +36,9 @@
 #linha3{
     margin-top: 1em;
     box-shadow: 1px 1px 400px white;
-    position: absolute;
+    position: relative;
     margin-top: 21.0px;
-    width: 78%;
+    width: 100%;
     z-index: 1;
     margin-left: 24.6em;
     border: 2px solid white;
