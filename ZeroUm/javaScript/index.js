@@ -77,12 +77,13 @@ Array.from(document.querySelectorAll('.init-hidden')).forEach(element=>{
 //indicador de progresso frufru do Renan
 function indicaProgresso() {
     const scroll =document.documentElement.scrollTop;
-    var altura = document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    var altura = document.documentElement.scrollHeight-
+    document.documentElement.clientHeight;
 
     var rolagem=(scroll/altura)*100;
-    conseole.log(rolagem);
+    
     if(rolagem>10){
-        document.getElementById("logoFooterFixed").style.marginTop='1.5em';
+        document.getElementById("logoHeaderImg").style.marginTop='0.5em';
         document.getElementById("nav_header").style.marginTop='2em';
         document.getElementById("header").style.position='fixed';
         document.getElementById("header").style.backgroundColor='#003140';
@@ -91,12 +92,11 @@ function indicaProgresso() {
         document.getElementById("header").style.height='7em';
         document.getElementById("header").style.zIndex='999';
         document.getElementById("header").style.boxShadow='1px 1px 10px black';
-   
        
 
     }else{
+        document.getElementById("logoHeaderImg").style.marginTop='';
         document.getElementById("header").style.position='';
-        document.getElementById("logoFooterFixed").style.marginTop='';
         document.getElementById("nav_header").style.marginTop='';
         document.getElementById("header").style.position='';
         document.getElementById("header").style.backgroundColor='';

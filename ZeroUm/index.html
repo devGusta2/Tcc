@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="./styles/servicosStyle.css"><!-- SERVICOS -->
     <link rel="stylesheet" href="./styles/contatoStyle.css"><!-- CONTATO -->
     <link rel="stylesheet" href="./styles/cardTcc.css"><!-- CARD DO SOBRE NÓS -->
+    <link rel="stylesheet" href="./styles/cardTccEquipe.css"><!-- CARDS DA EQUIPE -->
     <!-- <link rel="stylesheet" href="./styles/contatoStyle.css"> -->
-    <link rel="icon" type="image/png" href="./img/logoZeroUm2.jpg"/>
+    <link rel="icon" type="image/png" href="./img/logoZeroUm3.png"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Home</title>
 </head>
@@ -86,17 +87,17 @@
 
                    
                      <section class="sobreNos">
-                            <div class="containerSobre">
+                            <div class="containerSobre" id="home">
 
                                 <div class="decoracaoIcon">
                                     <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
                                     <h1 id="titleSection">Sobre Nós</h1>
                                 </div>
 
-                                <div class="columCardSobreNos1">
+                                <div class="columCardSobreNos1" >
                                     <p class="descCardSb1">A zero um é uma empresa de desenvolvimento<br> de softwares que busca trazer soluções com <br>criatividade e eficiência para seus clientes, sempre<br>trazendo inovações coms segurança.</p>
                                     <div class="cardSobre1">
-                                        <div class="imgCardSb" style="margin-top:2em">
+                                        <div class="imgCardSb" style="margin-top:2em" >
                                             <img src="./img/icons/predio.png" alt="produtividade-icon" class="imgCardSb">
                                         </div>
                                         <p class="descCardSb" style="margin-top: 8em; position: absolute;">Desenvolvimento de softwares para empresas de pequeno e médio porte.</p>
@@ -104,11 +105,11 @@
                                         <div class="iconSobre4"></div>
                                     </div>
                                 </div>
-                                <div class="columCardSobreNos">
+                                <div class="columCardSobreNos" >
                                 <div class="rowCardsSb">
                                         <div class="cardSobre">
                                             <div class="imgCardSb">
-                                                <img src="./img/icons/produtividadeIcon.png" alt="produtividade-icon" class="imgCardSb">
+                                                <img src="./img/icons/produtividadeIcon.png" alt="produtividade-icon" class="imgCardSb" >
                                             </div>
                                             <p class="descCardSb">Focamos em produtividade constante</p>
                                             <div class="iconSobre"></div>
@@ -125,7 +126,7 @@
                                 </div>
                                     <div class="cardSobre1">
                                         <div class="imgCardSb"style="margin-top:2em">
-                                            <img src="./img/icons/ideia.png" alt="produtividade-icon" class="imgCardSb" >
+                                            <img src="./img/icons/ideia.png" alt="produtividade-icon" class="imgCardSb"  >
                                         </div>
                                         <p class="descCardSb" style="margin-top: 8em; position: absolute;">Novas ideias com criatividade, inovaçãoe segurança.</p>
                                         <div class="iconSobre3"></div>
@@ -151,7 +152,7 @@
                     </section>
                     
                     <Section id="sectionProjetos">
-                        <div class="containerProjetos">
+                        <div class="containerProjetos" >
                             <div class="decoracaoIcon">
                                 <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-people">
                                 <h1 id="titleSection">Serviços</h1>
@@ -201,28 +202,259 @@
                     </Section>
 
                     <div class="sectionProjetosAndamento">
-                        <div class="titleSectionPrjtAnd">
-                            <h1 style="font-size: 32pt;">Collepet</h1>
+                           <div class="displayLinha">
+                                <div class="linhaAngulada1"></div>
+                                <div class="linhaAngulada"></div>
+                                <div class="linhaAngulada2"></div>
+                           </div>
+                     <div style="display: flex; flex-direction: column;" id="projetos-ancora" >
+                        <div class="logoCollepet">
+                            <img src="./img/CollepetLogo.png" alt="CollepetLogo" id="logoProjetoPrincipal">
+                       </div>
+                       <div class="rowProjectSectoin">
+                        <div class="columnDesc">
+                            <h1 id="tittle-collepet">Baixe já em seu<br> dispositivo!</h1>
+                            <ul class="estrela">
+                                <li class="pontos-collept">Monitore seu pet</li>
+                                <li class="pontos-collept">Agilidade e praticidade</li>
+                                <li class="pontos-collept">Responsividade</li>
+                                <div id="ver-maiss">
+                                    <p >Ver Mais</p>
+                                </div>
+                            </ul>
                         </div>
-                        <div class="rowProjectSectoin">
-                            <div class="columnDesc">
-                                <ul>
-                                    <li>Monitore seu pet</li>
-                                    <li>Agilidade e praticidade</li>
-                                    <li>Responsividade</li>
-                                </ul>
+                        <div class="imgBoxProjet">
+                            <img src="./img/ImgTabletCellCollepet.png" alt="cell-tablet" id="ftComercial">
+                        </div>
+                    </div>
+                     </div>
+                   
+                </div>
+
+                <div id="video-ancora">
+
+                </div>
+                    <section class="section-video" >
+                        <div class="containerVideo" >
+                            <div class="decoracaoIconVideo">
+                                <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
+                                <h1 id="titleSection">Vídeo</h1>
+                            </div>
+                            <div class="videoBox">
+                                <video  src="./Video/VID-20230523-WA0008.mp4" controls class="video" type="video/mp4"></video>
+                            </div>
+                            <div class="descVideo">
+                                <h1 id="titleSection">Melhorando o mundo<br> através de códigos</h1>
+                                 <p class="textVideo">
+                                     Assista uma breve <span style="color:#41B8C4"> apresentação de um dos nossos projetos em andamento.</span>
+                                 </p>
+                                 <div id="saibaMaisVideo">Saiba mais</div>
+                            </div>
+                            
+                        </div>
+                        <!-- <div class="videoBox" id="video-ancora">
+                             <div class="videoColumn">
+                                 <div class="titleVideo">
+                                     
+                                         <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
+                                         
+                                         <div id="scroll-progresso3"></div>
+                                    
+                                    <h1 id="videoTitle">Vídeo</h1>
+                                 </div>
+                                 <video src="./Video/VID-20230523-WA0008.mp4" controls class="image-pitch" type="video/mp4"></video>
+                             </div>
+                             <div class="columnDescVideo">
+                                 <h3>Melhorando mundo através de códigos:</h3>
+                                 <p class="descVideo">
+                                     Assista uma breve   <span style="color:green"> apresentação de um dos nossos projetos em andamento.</span>
+                                 </p>
+                             </div>
+                        </div> -->
+                      </section> 
+
+                    <div class="sliderContainer" >
+                        <div class="containerEquipe">
+                            <div class="decoracaoIconTeam" id="equipe-ancora">
+                                <img src="./img/icons/AboutUs.png" alt="icon-people" id="icon-people" style="margin-top:2.5em;">
+                                <h1 id="titleSection" style="color:white;margin-top: 1em;">Equipe</h1>
+                            </div>
+                            <div class="slider-content">
+                                <div class="columnCardEquipe" style="display: flex; flex-direction: column; gap:3em">
+                                    <div class="containerCardEquipe">
+                                        
+                                    <div class="card">
+                                        <div class="box">
+                                            <div class="content">
+                                                <img src="./img/equipe/Alef.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h1 class="titleName">Alef</h1>
+                                            <h3 class="funcaoTcc">?</h3>
+                                        </div>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="box">
+                                            <div class="content">
+                                                <img src="./img/equipe/Andre.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h1 class="titleName">Andre</h1>
+                                            <h3 class="funcaoTcc">Back-End</h3>
+                                        </div>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="box">
+                                            <div class="content">
+                                                <img src="./img/equipe/Felipe.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h1 class="titleName">Felipe</h1>
+                                            <h3 class="funcaoTcc">Front-End e designer</h3>
+                                        </div>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="box">
+                                            <div class="content">
+                                                <img src="./img/equipe/Gustavo.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h1 class="titleName">Gustavo</h1>
+                                            <h3 class="funcaoTcc"> Front-End e designer</h3>
+                                        </div>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="box">
+                                            <div class="content">
+                                                <img src="./img/equipe/Eu.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h1 class="titleName">Henrique</h1>
+                                            <h3 class="funcaoTcc">Front-End e designer</h3>
+                                        </div>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    </div>
+    
+                                    <div class="containerCardEquipe">
+                                        <div class="card">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <img src="./img/equipe/Johny.jpeg">
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <h1 class="titleName">Johny</h1>
+                                                <h3 class="funcaoTcc">Mobile</h3>
+                                            </div>
+                                            <div class="socialIcons">
+                                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <img src="./img/equipe/José.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <h1 class="titleName">José</h1>
+                                                <h3 class="funcaoTcc">BDA</h3>
+                                            </div>
+                                            <div class="socialIcons">
+                                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <img src="./img/equipe/Julio.jpeg">
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <h1 class="titleName">Julio</h1>
+                                                <h3 class="funcaoTcc">Mobile</h3>
+                                            </div>
+                                            <div class="socialIcons">
+                                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <img src="./img/equipe/Renan.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <h1 class="titleName">Renan</h1>
+                                                <h3 class="funcaoTcc">Auxiliar do Auxiliar de design.</A></h3>
+                                            </div>
+                                            <div class="socialIcons">
+                                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <img src="./img/equipe/Thiago.jpeg">
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <h1 class="titleName">Thiago</h1>
+                                                <h3 class="funcaoTcc">Analista e auxiliar de design</h3>
+                                            </div>
+                                            <div class="socialIcons">
+                                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
-
-
-
-
-
-
-
+                    
         </div>
             <!--Header -->
           
@@ -390,27 +622,7 @@
                   
 
                     
-                     <!-- <section id="section-video" >
-                       <div class="videoBox" id="video-ancora">
-                            <div class="videoColumn">
-                                <div class="titleVideo">
-                                    
-                                        <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
-                                        
-                                        <div id="scroll-progresso3"></div>
-                                   
-                                   <h1 id="videoTitle">Vídeo</h1>
-                                </div>
-                                <video src="./Video/VID-20230523-WA0008.mp4" controls class="image-pitch" type="video/mp4"></video>
-                            </div>
-                            <div class="columnDescVideo">
-                                <h3>Melhorando mundo através de códigos:</h3>
-                                <p class="descVideo">
-                                    Assista uma breve   <span style="color:green"> apresentação de um dos nossos projetos em andamento.</span>
-                                </p>
-                            </div>
-                       </div>
-                     </section> -->
+                    
 
                    
                         
@@ -597,12 +809,12 @@
 
 
                                   
-                     <!-- <section class="section-contato" id="contato-ancora">
+                      <section class="section-contato" id="contato-ancora">
                         <div class="titleAndIcon">
-                            <div class="rowContact">
+                            <!-- <div class="rowContact">
                                 <img src="./img/icons/tel-icon.png" alt="icon-team" id="icon-tel">
                                 <h1 id="title-contact">Contato</h1>
-                            </div>
+                            </div> -->
                             <div id="scroll-progresso5"></div>
                        </div> 
                         <span></span>
@@ -763,7 +975,7 @@
                             </div>
                         </div>
                     </section> 
- -->
+ 
 
 
 
@@ -790,21 +1002,17 @@
                         </div>
                      </section>-->
 
-                     <!-- <section class="parceiros">
-                        <div class="textParceiro">
-                            <img src="./img/icons/iconEmpresas.png" alt="icon-parceria" id="icon-parceria">
-                            <h2 id="titleEmpresas">Empresas que já contam com a gente</h2>
-                        </div>
-                        <div class="parceirosBox">
-                            <div class="parceirosImg">
-                                <a href="#"><img class="parceiro1" src="./img/logo nuts.png" alt="logoNuts" id="logoIconParceiro"></a>
-                                <a href="#"><img class="parceiro2" src="img/LogoAlpha2.png.png" alt="logoAlpha" id="logoIconParceiro1"></a>
+                      <div class="parceiros">
+                       <div class="containerParceiros">
+                            <div class="titleParceiroBox">
+                                <h1 id="titleParceiros">Empresas que já contam com a gente</h1>
                             </div>
-                            <div class="icon-empresas1">
-                                <img src="./img/icons/iconEmpresas.png" alt="icon-parceria" id="icon-empresasImg">
+                            <div class="rowParceiros">
+                                <img src="./img/nuts.png" alt="logo-nuts" class="logoParceiros">
+                                <img src="./img/LogoAlpha2.png.png" class="logoParceiros" alt="logo-nuts">
                             </div>
-                        </div>
-                    </section>   -->
+                       </div>
+                    </div>   
 
                      <!-- <div tabindex="0"class="content" id="content" onclick="disbleSidebar()">
                          <h1>funfa</h1>
@@ -820,9 +1028,9 @@
 
             </main>
 
-            <!-- <footer>
+             <footer class="footerZeroUm">
                 <div class="logoFooter">
-                    <img  src="./img/Nova ZeroUm Border Black.png" style="height: 100px; margin-top: 100px;"  id="logoFooter">
+                    <!-- <img  src="./img/Nova ZeroUm Border Black.png" style="height: 100px; margin-top: 100px;"  id="logoFooter"> -->
                     <div class="footerContainer">
                         <div class="socialIcons2">
                             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -844,9 +1052,9 @@
                     <div class="footerBottom">
                         <p>Copyright &copy;2023; Designer by <span class="designer">Save Br</span></p>
                     </div>
-            </footer> -->
+            </footer> 
         
     </body>
-    <script src="./javaScript/index.js">
+        <script src="./javaScript/index.js">
     </script>
 </html>

@@ -36,12 +36,7 @@
     height: 18em;
     margin-top: -6.1em;
 }
-#titleEmpresas{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 4%;
-    margin-left: 15%;
-    font-size: 25pt;
-}
+
 body{
     color:black;
     font-family: 'logoFont','Times','serif';
@@ -117,6 +112,27 @@ body{
     font-weight: bold;
 }    
 
+#ver-maiss{
+    background-color: #AD8A48;
+    color: white;
+    width: 30%;
+    height: 2em;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+#ver-maiss:hover{
+    background-color: white;
+    color: #003140;
+     width: 30%;
+    height: 2em;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    transition: 1s;
+    box-shadow: 1px 4px 10px white;
+}
 
 
 
@@ -203,10 +219,8 @@ body{
     width: 4.5em;
     margin-left: 2.5em;
 }
-.videoColumn{
-    display: flex;
-    flex-direction: column;
-}
+
+
 #icon-tool{
     height: 6em;
     width: 6em;
@@ -345,23 +359,7 @@ body{
 .container-empresas{
     /* background-color: white; */
 }
-.parceirosBox{
-    margin-left: -120%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    box-shadow: 1px 1px 4px black;
-    background-color:  #031326;
-    height: 40em;
 
-}
-.parceiros{
-
-    margin-left: 20%;
-    margin-top: 50%;
-    min-height: 100vh;
-   
-}
 .sectionTextRight{
     margin-left: 44%;
     margin-top: 20%;
@@ -396,21 +394,7 @@ section {
 #logoIconParceiro1{
     margin-top: -9em;
 }
-.parceirosImg{
-  
-    display: flex;
-    flex-direction: row;
-    gap: 3em;
-    margin-left: 55%;
-    margin-top: 10em;
-    border-radius: 10px;
-    width: 100%;
-    height: 20em;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    box-shadow: 10px 10px 20px black;
-}
+
 .barEffect{
     margin-left: 8%;
     margin-top: -45.7%;
@@ -524,20 +508,7 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#video {
 
-    margin-left: -3em;
-    margin-top: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
-#videoTitle{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    margin-left: 14.5em;
-    margin-top: 1em;
-    font-size: 25pt;
-}
 
 
 
@@ -762,9 +733,9 @@ background: linear-gradient(180deg, rgba(255,0,0,1) 5%, rgba(46,245,82,1) 47%, r
 
 }
 
-#section-video{
+.section-video{
     min-height: 100vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 
@@ -811,9 +782,53 @@ section{
 }
 
 ::-webkit-scrollbar{
-    width: 0px;
+   width: 0;
+}
+/* PARCEIROS */
+
+
+
+.parceiros{
+    /* background-color: #41B8C4; */
+    height: 70vh;
+    width: 100%;
+    margin-top: 70%;
+    /* box-shadow: 10px 1px 20px black; */
 }
 
+#titleParceiros{
+    font-size: 32pt;
+    margin-top: 3em;
+    color: black;
+    
+}
+.titleParceiroBox{
+    margin-top: 3em;
+    text-align: center;
+}
+.logoParceiros{
+    height: 25em;
+    width: 25em;
+    margin-top: 5em;
+}
+.rowParceiros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.containerParceiros{
+    margin-top: 3em;
+ 
+
+}
+
+
+
+
+
+
+
+/* FIM */
 #contatoTittle{
     color: white;
     margin:auto;
@@ -823,46 +838,79 @@ section{
 }
 
 /* VIDEO ************************ */
-#videoTItle{
-    color: black;
-    margin-left: 48%;
-    margin-top: 5em;    
-    font-size: 28pt;
-    position: absolute;
-}
-#video{
-    color: black;
-    margin-left: 45%;
-    font-size: 28pt;
-}
-.videoBox{
-    margin-left: 0em;
+
+
+.decoracaoIconVideo{
     display: flex;
     flex-direction: row;
-    gap: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
-}
-.columnDescVideo{
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-    margin-top: 8em;
-}
-.descVideo{
-    text-align: left;
+    margin-left: 6em;
 
 }
-.image-pitch{
-    border-radius: 20px;
-    margin-left: 7.5em;
-    margin-top: 0em;
-    width: 25em;
-    height: 15em;
-    /* box-shadow: 10px 10px 10px purple; */
-    animation: go-back 1s infinite alternate;
-    box-shadow: 1px 1px 10px black;
+.containerVideo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3em;
 }
+#icon-video{
+    height: 7em;
+    width: 7em;
+    margin-top: -2em;
+}
+.video{
+    height: 476px;
+    width: 800px;
+    border: 20px solid white;
+    margin-top: 10em;
+    box-shadow: 1px 1px 20px black;
+    outline: 0;
+}
+.textVideo{
+    font-size: 22pt;
+    margin-top: 3em;
+}
+.descVideo{
+    margin-top: 10em;
+}
+
+#saibaMaisVideo{
+    height: 3em;
+    background-color: #41B8C4;
+    border-radius: 50px;
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+    width: 10em;
+    padding: 1em;
+    margin-top: 3em;
+    box-shadow: 5px 5px 10px black;
+}
+
+#saibaMaisVideo:hover{
+    background-color: #5cc3cd;
+    transform:translateY(5px);
+    transition: 0.5s;
+
+}
+#saibaMaisVideo:not(hover){
+    transform:translateY(0px);
+    transition: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM */
+
 /* fim VIdeo */
 .inptForm{
     display: flex;
@@ -976,7 +1024,7 @@ section{
     color: white;
     box-shadow: 1px 1px black;
     text-align: center;
-    
+    padding-top: 5px;
     
 }
 
@@ -1099,15 +1147,19 @@ section{
 
 }
 #titleSection{
-    font-size: 22pt;
+    font-size: 32pt;
 }
 
 
 .sectionProjetosAndamento{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(40,40,40,1) 43%, rgba(60,60,60,1) 85%);
+    background-color: #003140;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
+    margin-top: -10vh;
+    box-shadow: 10px 1px 20px black;
+    position: relative;
+    z-index: 990;
+    
 }
 
 .titleSectionPrjtAnd{
@@ -1116,10 +1168,154 @@ section{
     margin-top: 3em;
 }
 
-.columnDesc{
+.columnDesc ul{
     color: white;
     font-size: 22pt;
     display: flex;
     flex-direction: column;
-    gap:3em;
+    gap:1em;
+    margin-top: 5em;
+}
+
+.rowProjectSectoin{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 12em;
+}
+
+#tittle-collepet{
+    color: white;
+    font-size: 64pt;
+}
+
+.pontos-collept{
+    color: white;
+}
+.estrela {
+    list-style-image: url('http://i.stack.imgur.com/5kI3v.png')
+}
+
+#ftComercial{
+    height: 200%;
+    width: 100%;
+    margin-top: -25em;
+    position: relative;
+    z-index: 999;
+}
+.logoCollepet{
+    margin:auto;
+    margin-top: -12em;
+    position: relative;
+    z-index: 999;
+}
+
+.linhaAngulada1{
+    background-color: #003140;
+    transform: rotate(320deg);
+    position: relative;
+    z-index: 999;
+    width: 20em;
+    height: 10em;
+    margin-left: 30%;
+
+}
+
+
+
+.linhaAngulada{
+    height: 10em;
+    width: 20em;
+    background-color: #003140;
+    z-index: 999;
+    position: relative;
+    margin-top: -85px;
+    margin-left: -88px;
+}
+.linhaAngulada2{
+    background-color: #003140;
+    width: 20em;
+    height: 10em;
+    transform: rotate(40deg);
+    margin-left: -88.5px;
+    position: relative;
+    z-index: 999;
+}
+.displayLinha{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: -3em;
+}
+.displayLinha2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30em;
+    margin-top: -6em;
+    position: relative;
+    z-index: 400;
+   
+}
+
+
+
+.SegundalinhaArgularMeio{
+    background-color:#031326;
+    width: 20em;
+    height: 10em;
+    transform: rotate(300deg);
+    position: relative;
+    z-index: -100;    
+
+}
+.SegundalinhaArgularMeio2{
+    background-color:#031326;
+    height: 10em;
+    width: 40em;
+    position: relative;
+    z-index: -100;   
+    margin-top: -100px;
+    margin-left: -149px;
+}
+.SegundalinhaArgularMeio3{
+    background-color:#031326;
+    width: 20em;
+    height: 10em;
+    transform: rotate(-300deg);
+    margin-left: -148px;
+    position: relative;
+    z-index: -100; 
+}
+
+
+
+.columnDesc{
+    margin-top: -10em;
+}
+
+
+
+
+
+
+/* EQUIPE-SECÇÃO */
+.columnCardEquipe{
+    align-items: center;
+    margin-top: 10em;
+}
+.sliderContainer{
+    margin-top: 0%;
+    background-color: #031326;
+    width: 100%;
+    justify-content: space-around;
+    height: 140vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.decoracaoIconTeam{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 1em;
 }
