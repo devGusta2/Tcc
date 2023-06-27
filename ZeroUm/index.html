@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/contatoStyle.css"><!-- CONTATO -->
     <link rel="stylesheet" href="./styles/cardTcc.css"><!-- CARD DO SOBRE NÓS -->
     <link rel="stylesheet" href="./styles/cardTccEquipe.css"><!-- CARDS DA EQUIPE -->
+    <link rel="stylesheet" href="./styles/lineSmoothGradient.css"><!-- LINHAS ANIMADAS FRUFRU -->
     <!-- <link rel="stylesheet" href="./styles/contatoStyle.css"> -->
     <link rel="icon" type="image/png" href="./img/logoZeroUm3.png"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -57,9 +58,10 @@
             <section class="inicio">
                 <div class="rowInicio">
                     <div class="columnInicioButton">
+                        <p style="color: white; text-align: left; font-size: 24pt; ">Bem-Vindo à ZeroUm</p>
                         <p id="text-inicio">Linkando você<br>ao futuro!</p>
                         <div id="ver-mais">
-                            <p >Ver Mais</p>
+                            <p>Ver Mais</p>
                         </div>
                     </div>
                 </div>
@@ -76,7 +78,7 @@
                 
             </div>
             <!--Principal -->
-            <main class="mainContent">
+            <main class="mainContent" >
             
                     <!-- <div class="logoBodyBox">
                          <img src="./img/logoZeroUmok.png" alt="logo" class="logoBody"> 
@@ -87,50 +89,63 @@
 
                    
                      <section class="sobreNos">
-                            <div class="containerSobre" id="home">
+                            <div class="containerSobre"  id="home" >
 
-                                <div class="decoracaoIcon">
-                                    <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
+                                <div class="decoracaoIcon" >
+                                    <div class="testePosicaoLinha">
+                                      <img src="./img/icons/AboutUsSombra.png" alt="icon-people" id="icon-people">
+                                        <div class="smoothLineGradientBox">
+                                            <div class="smoothLine1" id="testeLinha">
+                                                
+                                            </div>
+                                       </div>
+                                    </div>
+
                                     <h1 id="titleSection">Sobre Nós</h1>
                                 </div>
+                           
 
-                                <div class="columCardSobreNos1" >
-                                    <p class="descCardSb1">A zero um é uma empresa de desenvolvimento<br> de softwares que busca trazer soluções com <br>criatividade e eficiência para seus clientes, sempre<br>trazendo inovações coms segurança.</p>
+                                <div class="columCardSobreNos1">
+                                    <p class="descCardSb1">A zero um é uma empresa de desenvolvimento<br> de softwares que busca trazer soluções com <br>criatividade e eficiência para seus clientes, sempre<br>trazendo inovações com segurança.</p>
                                     <div class="cardSobre1">
-                                        <div class="imgCardSb" style="margin-top:2em" >
+                                        <!-- <h1 class="titleDescCardSb">Soluções</h1> -->
+                                        <div class="imgCardSb" style="margin-top:2em"  >
                                             <img src="./img/icons/predio.png" alt="produtividade-icon" class="imgCardSb">
                                         </div>
                                         <p class="descCardSb" style="margin-top: 8em; position: absolute;">Desenvolvimento de softwares para empresas de pequeno e médio porte.</p>
-                                        <div class="iconSobre3"></div>
+                                        <!-- <div class="iconSobre3"></div> -->
                                         <div class="iconSobre4"></div>
                                     </div>
                                 </div>
                                 <div class="columCardSobreNos" >
                                 <div class="rowCardsSb">
                                         <div class="cardSobre">
+                                            <!-- <h1  class="titleDescCardSb1">Produção</h1> -->
                                             <div class="imgCardSb">
                                                 <img src="./img/icons/produtividadeIcon.png" alt="produtividade-icon" class="imgCardSb" >
                                             </div>
                                             <p class="descCardSb">Focamos em produtividade constante</p>
-                                            <div class="iconSobre"></div>
-                                            <div class="iconSobre2"></div>
+                                            <!-- <div class="iconSobre"></div> -->
+                                            <!-- <div class="iconSobre2"></div> -->
                                         </div>
                                         <div class="cardSobre">
+                                            <!-- <h1  class="titleDescCardSb1">Confiança</h1> -->
                                             <div class="imgCardSb">
                                                 <img src="./img/icons/confianca.png" alt="confiança-icon" class="imgCardSb">
                                             </div>
                                             <p class="descCardSb" >Confiamos em nossos colaboradores e clientes</p>
-                                            <div class="iconSobre"></div>
-                                            <div class="iconSobre2"></div>
+                                            <!-- <div class="iconSobre"></div>
+                                            <div class="iconSobre2"></div> -->
                                         </div>
                                 </div>
                                     <div class="cardSobre1">
+                                        <!-- <h1  class="titleDescCardSb">Inovação</h1> -->
                                         <div class="imgCardSb"style="margin-top:2em">
                                             <img src="./img/icons/ideia.png" alt="produtividade-icon" class="imgCardSb"  >
                                         </div>
-                                        <p class="descCardSb" style="margin-top: 8em; position: absolute;">Novas ideias com criatividade, inovaçãoe segurança.</p>
-                                        <div class="iconSobre3"></div>
-                                        <div class="iconSobre4"></div>
+                                        <p class="descCardSb" style="margin-top: 8em; position: absolute;">Novas ideias com criatividade, inovação e segurança.</p>
+                                        <!-- <div class="iconSobre3"></div>
+                                        <div class="iconSobre4"></div> -->
                                     </div>
                                 </div>
                             </div>
@@ -154,11 +169,105 @@
                     <Section id="sectionProjetos">
                         <div class="containerProjetos" >
                             <div class="decoracaoIcon">
-                                <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-people">
-                                <h1 id="titleSection">Serviços</h1>
+                                <div class="testePosicaoLinha">
+
+                                    <img src="./img/icons/malaIcon.png" alt="icon-people" id="icon-mala">
+                                    <div class="smoothLineGradientBox">
+                                        <div class="smoothLine2" id="testeLinha2">
+                                            
+                                        </div>
+                                   </div>
+                                </div>
+                                
+                                <h1 id="titleSection" style="margin-top: 4em;">Serviços</h1>
                             </div>
+                            <div class="leftMnsgBox" id="testeSlideBox">
+                                    <div class="contentLeftMsngBox">
+                                        <div class="textLeftMsng">
+                                            <h2>Arduíno</h2>
+                                            <p>O que é Arduino? O Arduino é uma plataforma de prototipagem<br>
+                                                eletrônica open source.Na prática, ele é formado por uma placa<br> 
+                                                eletrônica expansível que pode ser utilizada para o desenvolvimento<br> 
+                                                de protótipos, ou seja, para adicionar inteligência em qualquer<br>
+                                                coisa e até controlá-la remotamente.</p>
+                                                <p>
+                                                    É uma plataforma de prototipagem (processo de criação<br>
+                                                    e fabricação de protótipos), open source (código aberto), criado<br>
+                                                     para que o desenvolvimento de projetos tivesse um preço acessível<br>
+                                                    para qualquer pessoa. Ele é um dispositivo que facilita a elaboração<br>
+                                                     de projetos robóticos, operando como uma mente eletrônica programável,<br> 
+                                                     de fácil uso e com várias portas para conexões com módulos e sensores.
+                                                </p>
+                                        </div>
+                                        <div class="imageBoxLeftMsng">
+                                            <img src="./img/projetos/descImageArduino.jpg" alt="foto-projeto-arduíno" id="msngLeftImage">
+                                        </div>
+                                    </div>
+                                    <div class="buttonLeftMsngBox">
+                                        <div class="buttonMsngServ" onclick="disableMsngSaibaMais()">
+                                            <p>Fechar</p>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="leftMnsgBox1" id="testeSlideBox1">
+                                <div class="contentLeftMsngBox">
+                                    <div class="textLeftMsng">
+                                        <h2>Apps</h2>
+                                        <p>Aplicativos móveis, também abreviados de “apps” ou chamados de “app mobile”,
+                                             são softwares desenvolvidos exclusivamente para dispositivos móveis como
+                                              celulares e tablets, gratuitos ou pagos. Eles se popularizaram a partir
+                                               do primeiro smartphone, em 2007, com o sistema operacional iOS. Hoje já
+                                                estão em outros dispositivos como smartTVs e vestíveis. O objetivo deles
+                                                 é disponibilizar funcionalidades de forma fácil e intuitiva.</p>
+                                            <p>
+                                                Existem outras plataformas que possuem aplicativos, como os mencionados<br>
+                                                 smartTV e wearables, porém este artigo irá focar nos aplicativos para celular.<br>
+                                                  Os sistemas operacionais mais populares são o Android e iOS.<br>
+                                            </p>
+                                    </div>
+                                    <div class="imageBoxLeftMsng">
+                                        <img src="./img/projetos/descImageApp.jpg" alt="foto-projeto-arduíno" id="msngLeftImage">
+                                    </div>
+                                </div>
+                                <div class="buttonLeftMsngBox">
+                                    <div class="buttonMsngServ" onclick="disableMsngSaibaMais1()">
+                                        <p>Fechar</p>
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+
+
+                        <div class="leftMnsgBox2" id="testeSlideBox2">
+                            <div class="contentLeftMsngBox">
+                                <div class="textLeftMsng">
+                                    <h2>WebSite</h2>
+                                    <p>Um sítio eletrónico ou site eletrônico ou saite, é um conjunto de páginas web,<br>
+                                         isto é, de hipertextos acessíveis geralmente pelo protocolo HTTP ou pelo HTTPS<br>
+                                          na internet. O conjunto de todos os sítios públicos existentes compõe a World Wide Web.</p>
+                                        <p>
+                                            Os websites podem variar muito em termos de design, funcionalidade e complexidade,<br>
+                                             desde sites simples de uma página até portais complexos com várias seções e recursos interativos.<br>
+                                        </p>
+                                </div>
+                                <div class="imageBoxLeftMsng">
+                                    <img src="./img/projetos/descImageWebSite.jpg" alt="foto-projeto-arduíno" id="msngLeftImage">
+                                </div>
+                            </div>
+                            <div class="buttonLeftMsngBox">
+                                <div class="buttonMsngServ" onclick="disableMsngSaibaMais2()">
+                                    <p>Fechar</p>
+                                </div>
+                            </div>
+                    </div>
+
                             <div class="rowCardsProjeto">
+                                
                                 <div class="cardProjetos">
+                                    
                                     <div class="colmnCardProjeto">
                                         <img src="./img/projetos/aduinoProjeto.jpg" alt="foto-projeto-arduíno" id="imgProjetos">
                                         <h2>Arduíno</h2>
@@ -166,7 +275,7 @@
                                             <img src="./img/icons/arduino.jpg" alt="icon-arduino" id="subImageCard">
                                             <p style="font-size: 22pt;">Projetos em Arduíno</p>
                                         </div>
-                                        <button class="buttonCardProjet">
+                                        <button class="buttonCardProjet" onclick="msngSaibaMais()">
                                             <h3 id="buttonTitle">Saiba Mais</h3>
                                         </button>
                                     </div>
@@ -177,9 +286,9 @@
                                         <h2>Apps</h2>
                                         <div class="subRowCard">
                                             <img src="./img/icons/celular.png" alt="icon-arduino" id="subImageCard">
-                                            <p style="font-size: 22pt;">Aplicativos Mobile</p>
+                                            <p  id="tituloCard" style="font-size: 22pt;">Aplicativos Mobile</p>
                                         </div>
-                                        <button class="buttonCardProjet">
+                                        <button class="buttonCardProjet" onclick="msngSaibaMais1()">
                                             <h3 id="buttonTitle">Saiba Mais</h3>
                                         </button>
                                     </div>
@@ -190,24 +299,65 @@
                                         <h2>Web Sites</h2>
                                         <div class="subRowCard">
                                             <img src="./img/icons/taghtml.png" alt="icon-arduino" id="subImageCard">
-                                            <p style="font-size: 22pt;">Projetos em WebSites</p>
+                                            <p id="tituloCard"style="font-size: 22pt;">Projetos em WebSites</p>
                                         </div>
-                                        <button class="buttonCardProjet">
+                                        <button class="buttonCardProjet" onclick="msngSaibaMais2()">
                                             <h3 id="buttonTitle">Saiba Mais</h3>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </Section>
+                        <div id="projetos-ancora">
 
-                    <div class="sectionProjetosAndamento">
-                           <div class="displayLinha">
+                        </div>
+                    </Section>
+                
+
+                    <div class="sectionProjetosAndamento" >
+
+
+
+
+                        <div class="section-video" id="videoInformativo">
+                            <div class="containerVideo" >
+                                <!-- <div class="decoracaoIconVideo">
+                                    <div class="testePosicaoLinha">
+                                        <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
+                                        <div class="smoothLineGradientBox">
+                                            <div class="smoothLine3" id="testeLinha3">
+                                                
+                                            </div>
+                                       </div>
+                                    </div>
+                                   
+                                    <h1 id="titleSection">Vídeo</h1>
+                                </div> -->
+                                <div class="videoBox">
+                                    <video  src="./Video/VID-20230523-WA0008.mp4" controls class="video" type="video/mp4"></video>
+                                </div>
+                                <div class="descVideo">
+                                    <h1 id="titleSection" style="color: #FCE8AA;">Melhorando o mundo<br> através de códigos</h1>
+                                     <p class="textVideo">
+                                        <span style="color:white"> Assista uma breve apresentação de um dos nossos projetos em andamento.</span>
+                                     </p>
+                                     <div id="saibaMaisVideo" onclick="disablemsngProjeto()">Fechar</div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+
+
+
+
+
+                        <img src="./img/efeitoProjetos.png" alt="decoracao-projetos" id="decoProjetos">
+                           <!-- <div class="displayLinha">
                                 <div class="linhaAngulada1"></div>
                                 <div class="linhaAngulada"></div>
                                 <div class="linhaAngulada2"></div>
-                           </div>
-                     <div style="display: flex; flex-direction: column;" id="projetos-ancora" >
+                           </div> -->
+                     <div style="display: flex; flex-direction: column;"  >
                         <div class="logoCollepet">
                             <img src="./img/CollepetLogo.png" alt="CollepetLogo" id="logoProjetoPrincipal">
                        </div>
@@ -218,8 +368,8 @@
                                 <li class="pontos-collept">Monitore seu pet</li>
                                 <li class="pontos-collept">Agilidade e praticidade</li>
                                 <li class="pontos-collept">Responsividade</li>
-                                <div id="ver-maiss">
-                                    <p >Ver Mais</p>
+                                <div id="ver-maiss" onclick="msngProjeto()">
+                                    <p>Ver Mais</p>
                                 </div>
                             </ul>
                         </div>
@@ -234,52 +384,15 @@
                 <div id="video-ancora">
 
                 </div>
-                    <section class="section-video" >
-                        <div class="containerVideo" >
-                            <div class="decoracaoIconVideo">
-                                <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
-                                <h1 id="titleSection">Vídeo</h1>
-                            </div>
-                            <div class="videoBox">
-                                <video  src="./Video/VID-20230523-WA0008.mp4" controls class="video" type="video/mp4"></video>
-                            </div>
-                            <div class="descVideo">
-                                <h1 id="titleSection">Melhorando o mundo<br> através de códigos</h1>
-                                 <p class="textVideo">
-                                     Assista uma breve <span style="color:#41B8C4"> apresentação de um dos nossos projetos em andamento.</span>
-                                 </p>
-                                 <div id="saibaMaisVideo">Saiba mais</div>
-                            </div>
-                            
-                        </div>
-                        <!-- <div class="videoBox" id="video-ancora">
-                             <div class="videoColumn">
-                                 <div class="titleVideo">
-                                     
-                                         <img src="./img/icons/iconVideo.png" alt="icon-video" id="icon-video">
-                                         
-                                         <div id="scroll-progresso3"></div>
-                                    
-                                    <h1 id="videoTitle">Vídeo</h1>
-                                 </div>
-                                 <video src="./Video/VID-20230523-WA0008.mp4" controls class="image-pitch" type="video/mp4"></video>
-                             </div>
-                             <div class="columnDescVideo">
-                                 <h3>Melhorando mundo através de códigos:</h3>
-                                 <p class="descVideo">
-                                     Assista uma breve   <span style="color:green"> apresentação de um dos nossos projetos em andamento.</span>
-                                 </p>
-                             </div>
-                        </div> -->
-                      </section> 
+                  
 
-                    <div class="sliderContainer" >
-                        <div class="containerEquipe">
+                    <div class="sliderContainer"  >
+                        <div class="containerEquipe" >
                             <div class="decoracaoIconTeam" id="equipe-ancora">
-                                <img src="./img/icons/AboutUs.png" alt="icon-people" id="icon-people" style="margin-top:2.5em;">
-                                <h1 id="titleSection" style="color:white;margin-top: 1em;">Equipe</h1>
-                            </div>
-                            <div class="slider-content">
+                                <img src="./img/icons/AboutUs.png" alt="icon-people" id="icon-people" style="margin-top:2.5em;margin-left:3.7em;">
+                                <h1 id="titleSection"  style="color:white;margin-top: 1em; position: relative;z-index: 50;">Equipe</h1>
+                            </div >
+                            <div class="slider-content" >
                                 <div class="columnCardEquipe" style="display: flex; flex-direction: column; gap:3em">
                                     <div class="containerCardEquipe">
                                         
@@ -291,7 +404,7 @@
                                         </div>
                                         <div class="text">
                                             <h1 class="titleName">Alef</h1>
-                                            <h3 class="funcaoTcc">?</h3>
+                                            <h3 class="funcaoTcc">Front-end</h3>
                                         </div>
                                         <div class="socialIcons">
                                             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -323,7 +436,7 @@
                                         </div>
                                         <div class="text">
                                             <h1 class="titleName">Felipe</h1>
-                                            <h3 class="funcaoTcc">Front-End e designer</h3>
+                                            <h3 class="funcaoTcc">Full stack</h3>
                                         </div>
                                         <div class="socialIcons">
                                             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -339,7 +452,7 @@
                                         </div>
                                         <div class="text">
                                             <h1 class="titleName">Gustavo</h1>
-                                            <h3 class="funcaoTcc"> Front-End e designer</h3>
+                                            <h3 class="funcaoTcc">Front-End e designer</h3>
                                         </div>
                                         <div class="socialIcons">
                                             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -355,7 +468,7 @@
                                         </div>
                                         <div class="text">
                                             <h1 class="titleName">Henrique</h1>
-                                            <h3 class="funcaoTcc">Front-End e designer</h3>
+                                            <h3 class="funcaoTcc">Analista e Front-End</h3>
                                         </div>
                                         <div class="socialIcons">
                                             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -391,7 +504,7 @@
                                             </div>
                                             <div class="text">
                                                 <h1 class="titleName">José</h1>
-                                                <h3 class="funcaoTcc">BDA</h3>
+                                                <h3 class="funcaoTcc">DBA</h3>
                                             </div>
                                             <div class="socialIcons">
                                                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -407,7 +520,7 @@
                                             </div>
                                             <div class="text">
                                                 <h1 class="titleName">Julio</h1>
-                                                <h3 class="funcaoTcc">Mobile</h3>
+                                                <h3 class="funcaoTcc">Back-End</h3>
                                             </div>
                                             <div class="socialIcons">
                                                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -423,7 +536,7 @@
                                             </div>
                                             <div class="text">
                                                 <h1 class="titleName">Renan</h1>
-                                                <h3 class="funcaoTcc">Auxiliar do Auxiliar de design.</A></h3>
+                                                <h3 class="funcaoTcc">Planejador de projeto</A></h3>
                                             </div>
                                             <div class="socialIcons">
                                                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -817,134 +930,277 @@
                             </div> -->
                             <div id="scroll-progresso5"></div>
                        </div> 
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>           
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                        <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>           
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>           
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                       x'
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  
             
                         <div class="imgBox" id="logoContato">
                             <img src="img/Nova ZeroUm Border Black.png" id="image-contato">
@@ -952,26 +1208,31 @@
                         <div class="signin">
                             <div class="content4">
                                 <h2>Comentar</h2>
-                                <div class="form">
-                                    <div class="inputBx">
-                                        <input type="text" required>
-                                        <i>Nome de usuário</i>
+                                <form action="" method="post">
+
+                               
+                                    <div class="form">
+                                        <div class="inputBx">
+                                            <input type="text" required name="nome">
+                                            <i>Nome de usuário</i>
+                                        </div>
+                                        <div class="inputBx">
+                                            <input type="email" required name="email">
+                                            <i>Email</i>
+                                        </div>
+                                        <div class="inputBx">
+                                            <input type="text" required name="coment">
+                                            <i>Comentário</i>
+                                        </div>
+                                        <div class="verify" style="margin-left:-4em">
+                                            <div  id="robot-test" class="g-recaptcha" data-sitekey="6Lee6-AlAAAAABy1fP2gezouCx-IMqFXUEdObEy6"></div>
+                                        </div>
+                                        <div class="inputBx">
+                                            
+                                            <input type="submit" value="Enviar">
+                                        </div>
                                     </div>
-                                    <div class="inputBx">
-                                        <input type="email" required>
-                                        <i>Email</i>
-                                    </div>
-                                    <div class="inputBx">
-                                        <input type="text" required>
-                                        <i>Comentário</i>
-                                    </div>
-                                    <div class="verify" style="margin-left:-4em">
-                                         <div id="robot-test"class="g-recaptcha" data-sitekey="6Lee6-AlAAAAABy1fP2gezouCx-IMqFXUEdObEy6"></div>
-                                    </div>
-                                    <div class="inputBx">
-                                        <input type="submit" value="Enviar">
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </section> 

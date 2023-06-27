@@ -1,0 +1,67 @@
+.smoothLine1{
+    transition: 1s;
+    animation: ease-in-out;
+    height: 0%;
+    width: 3px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 11%, rgba(53,141,164,1) 58%, rgba(44,191,228,1) 91%);
+    position: absolute;
+    margin-left: 2.5em;
+    margin-top: -5em;
+    animation-name:line1;
+}
+.smoothLine2{
+    margin-left: 2.7em;
+    margin-top: -5em;
+    transition: 1s;
+    animation: ease-in-out;
+    height: 0%;
+    width: 3px;
+    background: rgb(44,191,228);
+    background: linear-gradient(180deg, rgba(44,191,228,1) 12%, rgba(53,141,164,1) 42%, rgba(0,49,64,1) 77%);
+    animation-name:line1;
+    position: absolute;
+}
+.smoothLine3{
+    margin-left: 5em;
+    margin-top: -10em;
+    transition: 1s;
+    animation: ease-in-out;
+    height: 0%;
+    width: 3px;
+    background: rgb(44,191,228);
+    background: linear-gradient(180deg, rgba(44,191,228,1) 23%, rgba(165,236,255,1) 59%, rgba(237,251,255,1) 92%);
+    animation-name:line1;
+    position: absolute;
+    z-index: 2;
+}
+
+.smoothLineGradientBox{
+    height: 100%;
+    margin-top: 10em;
+    display: flex;
+}
+.testePosicaoLinha{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+@keyframes line1{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+        
+    }
+}
+
+@keyframes animationSmoothGradientLine {
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 100%;
+    }
+}

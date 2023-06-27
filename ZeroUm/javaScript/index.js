@@ -55,8 +55,8 @@ const observer= new IntersectionObserver(entries=>{
         if(entry.intersectionRatio>=1){
             entry.target.classList.add('init-hidden-off');
 
-            linhaColorida.style.animationName='pfv';
-            textServicos.style.position='absolute';
+            smoothGradientLine.style.animationName='change';
+            
             
             // linhaColorida.style.height='30em';
         }
@@ -81,7 +81,20 @@ function indicaProgresso() {
     document.documentElement.clientHeight;
 
     var rolagem=(scroll/altura)*100;
-    
+    if(rolagem>9){
+        document.getElementById("testeLinha").style.height='100%';
+    }else{
+        document.getElementById("testeLinha").style.height='0%';
+    }
+
+    if(rolagem>25){
+        document.getElementById("testeLinha2").style.height='100%';
+    }else{
+        document.getElementById("testeLinha2").style.height='0%';
+    }
+
+
+
     if(rolagem>10){
         document.getElementById("logoHeaderImg").style.marginTop='0.5em';
         document.getElementById("nav_header").style.marginTop='2em';
@@ -92,9 +105,9 @@ function indicaProgresso() {
         document.getElementById("header").style.height='7em';
         document.getElementById("header").style.zIndex='999';
         document.getElementById("header").style.boxShadow='1px 1px 10px black';
-       
-
+        
     }else{
+        
         document.getElementById("logoHeaderImg").style.marginTop='';
         document.getElementById("header").style.position='';
         document.getElementById("nav_header").style.marginTop='';
@@ -173,3 +186,52 @@ function nextImage(){
 
 //teste idiomas
 
+
+
+//mensagem sabia
+function msngSaibaMais(){
+    document.getElementById("testeSlideBox").style.marginLeft='0vh';
+    document.getElementById("testeSlideBox").style.opacity='1';
+           
+}
+function disableMsngSaibaMais(){
+    document.getElementById("testeSlideBox").style.marginLeft='-200vh';
+    document.getElementById("testeSlideBox").style.opacity='0';
+    document.querySelector("body").style.overflow=''
+}
+
+
+function msngSaibaMais1(){
+    document.getElementById("testeSlideBox1").style.marginLeft='0vh';
+    document.getElementById("testeSlideBox1").style.opacity='1';
+}
+function disableMsngSaibaMais1(){
+    document.getElementById("testeSlideBox1").style.marginLeft='-200vh';
+    document.getElementById("testeSlideBox1").style.opacity='0';
+    document.querySelector("body").style.overflow=''
+}
+
+
+function msngSaibaMais2(){
+    document.getElementById("testeSlideBox2").style.marginLeft='0vh';
+    document.getElementById("testeSlideBox2").style.opacity='1';
+           
+}
+function disableMsngSaibaMais2(){
+    document.getElementById("testeSlideBox2").style.marginLeft='-200vh';
+    document.querySelector("body").style.overflow=''
+    document.getElementById("testeSlideBox2").style.opacity='0';
+}
+
+
+// FUNÇÃO PARA A PARTE DO SAIBA MAIS DO VIDEO
+function msngProjeto(){
+    document.getElementById("videoInformativo").style.marginLeft='18vh';
+    document.getElementById("videoInformativo").style.opacity='1';
+    // document.querySelector('body').style.backdropFilter='15px';
+}
+
+function disablemsngProjeto(){
+    document.getElementById("videoInformativo").style.marginLeft='-200vh';
+    document.getElementById("videoInformativo").style.opacity='0';
+}

@@ -20,7 +20,6 @@
     flex-wrap: wrap;
     overflow: hidden;
     margin-top: 10%;
-    height: 100vh;
     background-color: #031326;
     box-shadow: 10px 1px 20px black;
 }
@@ -116,7 +115,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#ffffff,#003140,#ffffff);
+    background: linear-gradient(#003140,#ffffff,#003140 );
     animation: animate 5s linear infinite;
 }
 @keyframes animate
@@ -132,8 +131,8 @@
     position: relative;
     display: block;
     width: calc(6.25vw - 2px);
-    height: calc(6.25vw - 2px);
-    background: #aaa ;
+    height: calc(3.25vw - 2px);
+    background: #031326;
     z-index: 2;
     transition: 1.5s;
 }

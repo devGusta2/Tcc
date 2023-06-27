@@ -21,6 +21,8 @@
   align-items: center;
   text-align: left;
   box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-direction: column;
 }
 .iconSobre{
   content: "";

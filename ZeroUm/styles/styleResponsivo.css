@@ -23,4 +23,82 @@
     .logoHeader{
         margin-right: 42%;
     }
+    /* HEADER */
+    .header{
+        height: 5em;
+        position: absolute;
+        
+    }
+    /* FIM HEADER */
+    #art-inicio{
+        opacity: 0;
+    }
+
+    .container{
+        align-items: center;
+    }
+    /* SECÇÕS TTTULO */
+    #titleSection{
+        font-size: 15pt;
+    }
+
+    /* FIM */
+
+
+    /* LINHAS CURVAS DO COMEÇO */
+
+    .linha-inicio-1,.linha-inicio-2,.breakLine{
+        opacity: 0;
+    }
+    /* fim */
+    /* LINHAS FRUFRU */
+    .smoothLineGradientBox{
+        opacity: 0;
+    }
+    /* FIM */
+
+    /* ICONES */
+    
+    #icon-mala{
+        height: 3em;
+        width: 3em;
+    }
+
+    /* FIM */
+
+    /* Cards de valores */
+        .descCardSb1,.descCardSb{
+            font-size: 10pt;
+        }
+        .cardSobre1{
+            height: 3em;
+        }
+    /* FIM  */
+
+    /* CARDS PROJETOS */
+    
+    .rowCardsProjeto{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .cardProjetos{
+        width: 10em;
+        height: 15em;
+    }
+    #tituloCard{
+        font-size: 1pt;
+    }
+    #subImageCard{
+        height: 3em;
+        width: 3em;
+        margin-left: 3em;
+    }
+    .buttonCardProjet{
+        height: 2em;
+        margin-top: -5em;
+    }
+    #buttonTitle{
+        font-size: 10pt;
+    }
 }
